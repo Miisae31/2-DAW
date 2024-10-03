@@ -1,0 +1,82 @@
+h1 {
+    text-align: center; 
+}
+
+.vista-axenda {
+    display: grid; /* Aqui indicamos que queremos que sea un contenedor grid*/
+    grid-template-columns:repeat(2, 1fr) ; /* Ajustamos el numero de columnas */
+    grid-template-rows: repeat(1, 1fr); /* Ajustamos el numero de filas */
+    gap: 20px;
+    
+    
+    
+}
+
+#formulario-seccion {
+    grid-area: 1 / 1 / 2 / 2;
+    
+    background-color: rgb(176, 215, 248);
+    margin: 25px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: Verdana;
+    border-radius: 15px;
+    
+}
+
+#listaxe-seccion {
+    grid-area: 1 / 2 / 2 / 3;
+
+    background-color: rgb(176, 215, 248);
+    margin: 25px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: Verdana;
+    border-radius: 15px;
+    
+    
+}
+
+#formulario-contactos {
+
+    grid-template-columns: repeat(1,1fr);
+    margin-right: 650px;
+    padding: 25px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    margin-top: -25px;
+  
+}
+
+h2 {
+    margin-left: 15px;
+}
+
+button {
+    text-align: center;
+    font-size: 12px;
+    font-family: Verdana;
+    border-radius: 15px;
+    margin-right: 100px;
+    height: 25px;
+}
+
+#buscar {
+    position: relative;
+    bottom: 25px;
+    left: 100px;
+}
+
+#modificar {
+    position: relative;
+    bottom: 23px;
+    left: 100px;
+}
+
+#eliminar {
+    position: relative;
+    bottom: 49px;
+    
+}
+
+
