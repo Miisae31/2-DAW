@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrícula</title>
+</head>
+<body>
+    <h1>Formulario Matriculación</h1>
+    <form>
+        <label for = "name" >Nombre: </label><br>
+        <input type ="text" id="name" name="name"><br>
+        <label for = "lname">Apellido: </label><br>
+        <input type ="text" id="lname" name="lname"><br>
+        <label for = "birthday">Fecha De Nacimiento: </label><br>
+        <input type="date" id = "birthday" name="birthday"><br>
+        <input type="checkbox" id ="cursoAnterior1" name="cursoAnterior1" value="DAW">
+        <label for ="cursoAnterior1">Desarrollo De Aplicacións Web</label><br>
+        <input type="checkbox" id ="cursoAnterior2" name="cursoAnterior2" value="DAM">
+        <label for ="cursoAnterior2">Desarrollo De Aplicacións Multiplataforma</label><br>
+        <input type="checkbox" id ="cursoAnterior3" name="cursoAnterior3" value="IB" checked>
+        <label for ="cursoAnterior3">Informática Básica</label><br>
+        <input type="checkbox" id ="cursoAnterior4" name="cursoAnterior4" value="ND" disabled>
+        <label for="cursoAnterior4">No tengo estudios</label><br>
+        <label for ="submitId"></label><br>
+        <input type="submit" id ="submitId" name="submitId"><br>
+        <p>
+        <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Imagen de un boton</b><br>
+        <input type="image" src="image-removebg-preview.png" alt="La imagen no puede mostrarse" width="200" height="52">
+        </p>
+        <label for="img">Select image:</label>
+        <input type="file" id="img" name="img" accept="image/*">
+        <input type="submit">
+        <p><strong>Nota:</strong> Por razones de seguridad no se permitirá que envíes archivos.</p>
+        <label for="Apodo">Apodo</label>
+        <input type="text" id="Apodo" name="Apodo" maxlength="10"><br><br>
+    </form>
+</body>
+</html>
+
