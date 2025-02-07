@@ -1,0 +1,229 @@
+[
+  {
+    "idPelicula": 1,
+    "titulo": "The Wire",
+    "ano": 2002,
+    "descripcion": "En Baltimore, un grupo de detectives de la policía y criminales interactúan en un retrato profundo de la ciudad, tocando temas como la corrupción, el sistema judicial, el tráfico de drogas y el abandono de las instituciones.",
+    "genero": "Crimen, Drama, Thriller",
+    "nota": 9.3,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "../media/img/theWire.jpg"
+  },
+  
+  {
+    "idPelicula": 2,
+    "titulo": "Breaking Bad",
+    "ano": 2008,
+    "descripcion": "Un profesor de química se convierte en fabricante de metanfetaminas tras un diagnóstico de cáncer terminal, lo que lo lleva a un mundo de crimen, mentiras y traiciones.",
+    "genero": "Drama, Crimen",
+    "nota": 9.5,
+    "rutaTrailer": "../media/video/breakingBad.mp4",
+    "rutaImagen": "../media/img/breakingBad.jpg"
+  },
+
+  {
+    "idPelicula": 3,
+    "titulo": "Los Simpsons",
+    "ano": 1989,
+    "descripcion": "La familia Simpson vive en Springfield y enfrenta situaciones cómicas en cada episodio. A través de sus personajes, la serie aborda temas sociales y políticos de una manera satírica.",
+    "genero": "Comedia, Animación",
+    "nota": 8.7,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "../media/img/theSimpsons.jpg"
+  },
+  {
+    "IdSerie": 4,
+    "titulo": "Cosmos: A Spacetime Odyssey",
+    "ano": 2014,
+    "descripcion": "Un fascinante viaje a través del tiempo y el espacio que explora los misterios del universo, presentando conceptos científicos con claridad y belleza visual. Presentado por Neil deGrasse Tyson, la serie es un homenaje a la original de Carl Sagan.",
+    "genero": "Documental, Ciencia",
+    "nota": 9.3,
+    "rutaTrailer": "https://www.youtube.com/watch?v=xbPRgkGqkME",
+    "rutaImagen": "https://www.example.com/images/cosmos.jpg"
+  },
+  {
+    "idPelicula": 5,
+    "titulo": "Black Mirror",
+    "ano": 2011,
+    "descripcion": "Una serie de antología que explora la relación entre la tecnología moderna y la naturaleza humana, mostrando los aspectos oscuros de la sociedad tecnológica.",
+    "genero": "Ciencia Ficción, Drama, Thriller",
+    "nota": 8.8,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "../media/img/blackMirror.jpg"
+  },
+  {
+    "IdSerie": 6,
+    "titulo": "Better Call Saul",
+    "ano": 2015,
+    "descripcion": "La historia de Jimmy McGill, un abogado que lucha por abrirse camino en Albuquerque antes de convertirse en Saul Goodman, el abogado sin escrúpulos que conocimos en Breaking Bad. La serie explora sus relaciones, elecciones y su descenso moral.",
+    "genero": "Crimen, Drama",
+    "nota": 8.9,
+    "rutaTrailer": "https://www.youtube.com/watch?v=HN4oydykJFc",
+    "rutaImagen": "https://www.example.com/images/better_call_saul.jpg"
+  },
+  {
+    "IdSerie": 7,
+    "titulo": "FROM",
+    "ano": 2022,
+    "descripcion": "Desvela el misterio de un pueblo en el centro de EE. UU. que atrapa a todo el que entra. Mientras los residentes luchan por mantener una sensación de normalidad y buscar una salida, deben sobrevivir a las amenazas del bosque circundante.",
+    "genero": "Drama, Terror, Thriller",
+    "nota": 7.5,
+    "rutaTrailer": "https://www.youtube.com/watch?v=XwRPvNqxE-g",
+    "rutaImagen": "https://www.example.com/images/el_camino.jpg"
+  },
+  {
+    "IdSerie": 8,
+    "titulo": "Ozark",
+    "ano": 2017,
+    "descripcion": "Marty Byrde, un asesor financiero, se traslada con su familia a los Ozarks para lavar dinero para un cártel mexicano. La serie explora la lucha de la familia por sobrevivir mientras se adentran en el oscuro mundo del crimen.",
+    "genero": "Crimen, Drama, Thriller",
+    "nota": 8.5,
+    "rutaTrailer": "https://www.youtube.com/watch?v=5hAXVqrljbs",
+    "rutaImagen": "https://www.example.com/images/ozark.jpg"
+  },
+  {
+    "IdSerie": 9,
+    "titulo": "Narcos",
+    "ano": 2015,
+    "descripcion": "La dramática historia del ascenso y caída de Pablo Escobar, uno de los narcotraficantes más notorios del mundo, y los agentes de la DEA que intentaron detenerlo. La serie también explora la influencia del narcotráfico en Colombia.",
+    "genero": "Crimen, Drama",
+    "nota": 8.8,
+    "rutaTrailer": "https://www.youtube.com/watch?v=U7elNhHwgBU",
+    "rutaImagen": "https://www.example.com/images/narcos.jpg"
+  },
+  {
+    "IdSerie": 10,
+    "titulo": "Fariña",
+    "ano": 2018,
+    "descripcion": "Una serie basada en hechos reales que narra la historia del narcotráfico en Galicia durante los años 80 y 90. Seguimos a Sito Miñanco, un pescador que se convierte en uno de los mayores traficantes de cocaína de Europa.",
+    "genero": "Crimen, Drama",
+    "nota": 7.7,
+    "rutaTrailer": "https://www.youtube.com/watch?v=OqvIrVGgNKU",
+    "rutaImagen": "https://www.example.com/images/farina.jpg"
+  },
+
+    {
+      "IdSerie": 11,
+      "titulo": "The Mandalorian",
+      "ano": 2019,
+      "descripcion": "En los confines de la galaxia, un solitario cazarrecompensas navega por un peligroso mundo post-imperial. La serie sigue sus aventuras mientras protege a un misterioso niño de fuerzas enemigas.",
+      "genero": "Ciencia Ficción, Aventura",
+      "nota": 8.7,
+      "rutaTrailer": "https://www.youtube.com/watch?v=aOC8E8z_ifw",
+      "rutaImagen": "https://www.example.com/images/mandalorian.jpg"
+    },
+    {
+      "IdSerie": 12,
+      "titulo": "Stranger Things",
+      "ano": 2016,
+      "descripcion": "Cuando un niño desaparece en un pequeño pueblo, su madre, sus amigos y un misterioso ser con habilidades sobrenaturales desatan una serie de eventos que revelan un mundo paralelo lleno de peligros.",
+      "genero": "Ciencia Ficción, Drama",
+      "nota": 8.7,
+      "rutaTrailer": "https://www.youtube.com/watch?v=b9EkMc79ZSU",
+      "rutaImagen": "https://www.example.com/images/stranger_things.jpg"
+    },
+    {
+      "IdSerie": 13,
+      "titulo": "Chernobyl",
+      "ano": 2019,
+      "descripcion": "Una dramatización del desastre nuclear de Chernobyl y sus consecuencias. La serie expone el heroísmo de los trabajadores y los secretos encubiertos que agravaron la tragedia.",
+      "genero": "Drama, Historia",
+      "nota": 9.4,
+      "rutaTrailer": "https://www.youtube.com/watch?v=s9APLXM9Ei8",
+      "rutaImagen": "https://www.example.com/images/chernobyl.jpg"
+    },
+    {
+      "IdSerie": 14,
+      "titulo": "Juego de Tronos",
+      "ano": 2011,
+      "descripcion": "Basada en la serie de libros 'Canción de hielo y fuego', esta épica serie narra las luchas de poder entre familias nobles para reclamar el Trono de Hierro en el continente ficticio de Westeros.",
+      "genero": "Fantasía, Drama",
+      "nota": 9.2,
+      "rutaTrailer": "https://www.youtube.com/watch?v=BpJYNVhGf1s",
+      "rutaImagen": "https://www.example.com/images/game_of_thrones.jpg"
+    },
+    {
+      "IdSerie": 15,
+      "titulo": "House of the Dragon",
+      "ano": 2022,
+      "descripcion": "Ambientada 200 años antes de 'Juego de Tronos', la serie sigue la dinastía Targaryen y los eventos que llevaron a la guerra civil conocida como 'La Danza de los Dragones'.",
+      "genero": "Fantasía, Drama",
+      "nota": 8.5,
+      "rutaTrailer": "https://www.youtube.com/watch?v=DotnJ7tTA34",
+      "rutaImagen": "https://www.example.com/images/house_of_the_dragon.jpg"
+    },
+    {
+      "IdSerie": 16,
+      "titulo": "Sherlock",
+      "ano": 2010,
+      "descripcion": "Una versión moderna de las aventuras de Sherlock Holmes y el Dr. John Watson en Londres, donde enfrentan casos intrigantes que combinan lógica, deducción y un toque contemporáneo.",
+      "genero": "Misterio, Crimen",
+      "nota": 9.1,
+      "rutaTrailer": "https://www.youtube.com/watch?v=xK7S9mrFWL4",
+      "rutaImagen": "https://www.example.com/images/sherlock.jpg"
+    },
+    {
+      "IdSerie": 17,
+      "titulo": "True Detective",
+      "ano": 2014,
+      "descripcion": "Una antología de detectives que explora casos complejos y oscuros, mientras ahonda en las vidas y los conflictos internos de los investigadores asignados a resolverlos.",
+      "genero": "Crimen, Drama, Misterio",
+      "nota": 9.0,
+      "rutaTrailer": "https://www.youtube.com/watch?v=fVQUcaO4AvE",
+      "rutaImagen": "https://www.example.com/images/true_detective.jpg"
+    },
+    {
+      "IdSerie": 18,
+      "titulo": "The Crown",
+      "ano": 2016,
+      "descripcion": "Una serie biográfica que detalla la vida de la Reina Isabel II desde su ascensión al trono hasta los eventos modernos, explorando los desafíos personales y políticos de la monarquía británica.",
+      "genero": "Drama, Historia",
+      "nota": 8.6,
+      "rutaTrailer": "https://www.youtube.com/watch?v=JWtnJjn6ng0",
+      "rutaImagen": "https://www.example.com/images/the_crown.jpg"
+    },
+    {
+      "IdSerie": 19,
+      "titulo": "Euphoria",
+      "ano": 2019,
+      "descripcion": "Rue, una adolescente en recuperación de adicciones, navega por los desafíos de la juventud moderna, incluyendo relaciones, traumas y la búsqueda de identidad, en una serie cargada de emociones y estilo visual.",
+      "genero": "Drama",
+      "nota": 8.4,
+      "rutaTrailer": "https://www.youtube.com/watch?v=vuAzkZIiGxI",
+      "rutaImagen": "https://www.example.com/images/euphoria.jpg"
+    },
+    {
+      "IdSerie": 20,
+      "titulo": "The Last of Us",
+      "ano": 2023,
+      "descripcion": "En un mundo postapocalíptico asolado por un hongo que convierte a los humanos en criaturas violentas, Joel y Ellie emprenden un peligroso viaje donde enfrentan la brutalidad de la supervivencia y descubren un vínculo que trasciende las pérdidas.",
+      "genero": "Aventura, Drama",
+      "nota": 9.0,
+      "rutaTrailer": "https://www.youtube.com/watch?v=8zJ8OVpTP2A",
+      "rutaImagen": "https://www.example.com/images/the_last_of_us.jpg"
+    },
+   
+  {
+    "IdSerie": 21,
+    "titulo": "Peaky Blinders",
+    "ano": 2013,
+    "descripcion": "La familia Shelby, liderada por el carismático Tommy Shelby, se abre paso en el mundo del crimen organizado en Birmingham, enfrentando a rivales, políticos y fuerzas de la ley en su ascenso al poder.",
+    "genero": "Crimen, Drama",
+    "nota": 9.0,
+    "rutaTrailer": "https://www.youtube.com/watch?v=8zJ8OVpTP2A",
+    "rutaImagen": "../media/img/peakyBlinders.jpg"
+    
+  },
+    {
+      "IdSerie": 22,
+      "titulo": "Dexter",
+      "ano": 2006,
+      "descripcion": "Dexter Morgan es un forense especializado en análisis de salpicaduras de sangre para la policía de Miami, pero también es un asesino en serie que solo mata a otros asesinos.",
+      "genero": "Crimen, Drama, Suspenso",
+      "nota": 8.6,
+      "rutaTrailer": "https://www.youtube.com/watch?v=YQeUmSD1c3g",
+      "rutaImagen": "../media/img/dexter.jpg"
+    }
+  
+
+]

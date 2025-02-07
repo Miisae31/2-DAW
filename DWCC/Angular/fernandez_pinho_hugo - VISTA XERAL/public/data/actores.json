@@ -1,0 +1,789 @@
+[
+  {
+    "IdActor": 1,
+    "Nombre": "Marlon",
+    "Apellidos": "Brando",
+    "FechaNacimiento": "1924-04-03",
+    "PeliculasInterpretadas": [
+      "El padrino",
+      "Apocalypse Now",
+      "Un tranvía llamado deseo"
+    ],
+    "PersonajesInterpretados": [
+      "Don Vito Corleone",
+      "Colonel Kurtz",
+      "Stanley Kowalski"
+    ],
+    "Biografia": "Marlon Brando fue uno de los actores más influyentes y aclamados de Hollywood. Su enfoque innovador de la actuación, influenciado por el método Stanislavski, transformó la industria cinematográfica. Su papel como Don Vito Corleone en 'El padrino' es considerado uno de los más icónicos de la historia del cine.",
+    "Profesion": "Actor Principal",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 2,
+    "Nombre": "Al",
+    "Apellidos": "Pacino",
+    "FechaNacimiento": "1940-04-25",
+    "PeliculasInterpretadas": ["El padrino", "El padrino II", "Scarface"],
+    "PersonajesInterpretados": [
+      "Michael Corleone",
+      "Michael Corleone",
+      "Tony Montana"
+    ],
+    "Biografia": "Al Pacino es uno de los actores más icónicos de Hollywood, conocido por su estilo intenso y su habilidad para encarnar personajes complejos. Su carrera incluye papeles emblemáticos como Michael Corleone en la saga 'El padrino' y Tony Montana en 'Scarface'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 3,
+    "Nombre": "James",
+    "Apellidos": "Caan",
+    "FechaNacimiento": "1940-03-26",
+    "PeliculasInterpretadas": [
+      "El padrino",
+      "Misery",
+      "Las Vegas 500 millones"
+    ],
+    "PersonajesInterpretados": [
+      "Sonny Corleone",
+      "Paul Sheldon",
+      "Jack Benyon"
+    ],
+    "Biografia": "James Caan fue un actor estadounidense conocido por su papel como Sonny Corleone en 'El padrino'. Caan se destacó por su presencia en pantalla y su habilidad para interpretar personajes en diversas películas, desde dramas hasta thrillers.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 4,
+    "Nombre": "Diane",
+    "Apellidos": "Keaton",
+    "FechaNacimiento": "1946-01-05",
+    "PeliculasInterpretadas": ["El padrino", "Annie Hall", "Manhattan"],
+    "PersonajesInterpretados": ["Kay Adams", "Annie Hall", "Mary Wilkie"],
+    "Biografia": "Diane Keaton es una actriz y directora estadounidense aclamada por su versatilidad. Conocida por su interpretación de Kay Adams en 'El padrino', Keaton ha tenido una exitosa carrera tanto en la comedia como en el drama, destacándose en filmes como 'Annie Hall'.",
+    "Profesion": "Actriz",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 5,
+    "Nombre": "Richard",
+    "Apellidos": "S. Castellano",
+    "FechaNacimiento": "1933-09-04",
+    "PeliculasInterpretadas": [
+      "El padrino",
+      "Tiburón 2",
+      "El valor de un hombre"
+    ],
+    "PersonajesInterpretados": ["Clemenza", "Carmine", "Pasquale"],
+    "Biografia": "Richard S. Castellano fue un actor estadounidense conocido por su papel de Clemenza en 'El padrino'. Aunque su carrera no fue larga, su actuación en este clásico de Francis Ford Coppola dejó una huella perdurable.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 6,
+    "Nombre": "Sterling",
+    "Apellidos": "Hayden",
+    "FechaNacimiento": "1916-03-10",
+    "PeliculasInterpretadas": [
+      "El padrino",
+      "Dr. Strangelove",
+      "La jungla de asfalto"
+    ],
+    "PersonajesInterpretados": ["Capt. McCluskey", "General Ripper", "Duncan"],
+    "Biografia": "Sterling Hayden fue un actor y escritor estadounidense conocido por sus papeles en 'El padrino' y 'Dr. Strangelove'. Su carrera abarcó varios géneros, desde thrillers hasta comedias, y su interpretación como el Capitán McCluskey en 'El padrino' es recordada como una de sus más destacadas.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+
+  {
+    "IdActor": 7,
+    "Nombre": "Cillian",
+    "Apellidos": "Murphy",
+    "FechaNacimiento": "1976-05-25",
+    "PeliculasInterpretadas": ["Peaky Blinders", "Inception", "Dunkirk"],
+    "PersonajesInterpretados": ["Thomas Shelby", "Robert Fischer", "Soldado"],
+    "Biografia": "Cillian Murphy es un actor irlandés conocido por su papel en 'Peaky Blinders' como Thomas Shelby.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 8,
+    "Nombre": "Helen",
+    "Apellidos": "McCrory",
+    "FechaNacimiento": "1968-08-17",
+    "PeliculasInterpretadas": ["Peaky Blinders", "Skyfall"],
+    "PersonajesInterpretados": ["Polly Gray", "N/A"],
+    "Biografia": "Helen McCrory fue una actriz británica conocida por su papel en 'Peaky Blinders' como Polly Gray.",
+    "Profesion": "Actriz",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 9,
+    "Nombre": "Paul",
+    "Apellidos": "Anderson",
+    "FechaNacimiento": "1978-11-19",
+    "PeliculasInterpretadas": ["Peaky Blinders", "The Revenant"],
+    "PersonajesInterpretados": ["Arthur Shelby", "N/A"],
+    "Biografia": "Actor británico conocido por interpretar a Arthur Shelby en 'Peaky Blinders'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 10,
+    "Nombre": "Annabelle",
+    "Apellidos": "Wallis",
+    "FechaNacimiento": "1984-09-25",
+    "PeliculasInterpretadas": ["Peaky Blinders", "The Mummy"],
+    "PersonajesInterpretados": ["Grace Burgess", "N/A"],
+    "Biografia": "Annabelle Wallis es una actriz británica conocida por interpretar a Grace Burgess en 'Peaky Blinders'.",
+    "Profesion": "Actriz",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 11,
+    "Nombre": "Tommy",
+    "Apellidos": "Shelby",
+    "FechaNacimiento": "1981-12-02",
+    "PeliculasInterpretadas": ["Peaky Blinders", "Dunkirk"],
+    "PersonajesInterpretados": ["Arthur Shelby", "N/A"],
+    "Biografia": "Actor británico conocido por interpretar a Arthur Shelby en 'Peaky Blinders'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 12,
+    "Nombre": "Brad",
+    "Apellidos": "Pitt",
+    "FechaNacimiento": "1963-12-18",
+    "PeliculasInterpretadas": ["Seven", "Fight Club", "Ocean's Eleven"],
+    "PersonajesInterpretados": ["Detective Mills", "N/A", "N/A"],
+    "Biografia": "Brad Pitt es un actor estadounidense, conocido por su papel en 'Seven' y 'Fight Club'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+
+  {
+    "IdActor": 13,
+    "Nombre": "Morgan",
+    "Apellidos": "Freeman",
+    "FechaNacimiento": "1937-06-01",
+    "PeliculasInterpretadas": ["Seven", "The Shawshank Redemption", "Invictus"],
+    "PersonajesInterpretados": ["Detective Somerset", "Ellis Boyd 'Red' Redding", "Nelson Mandela"],
+    "Biografia": "Morgan Freeman es un actor estadounidense conocido por su voz distintiva y sus papeles icónicos en películas como 'Seven' y 'The Shawshank Redemption'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 14,
+    "Nombre": "Kevin",
+    "Apellidos": "Spacey",
+    "FechaNacimiento": "1959-07-26",
+    "PeliculasInterpretadas": ["Seven", "American Beauty", "The Usual Suspects"],
+    "PersonajesInterpretados": ["John Doe", "Lester Burnham", "Roger 'Verbal' Kint"],
+    "Biografia": "Kevin Spacey es un actor estadounidense conocido por su interpretación de personajes complejos como el villano John Doe en 'Seven'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 15,
+    "Nombre": "David",
+    "Apellidos": "Caruso",
+    "FechaNacimiento": "1956-01-07",
+    "PeliculasInterpretadas": ["Seven", "N/A"],
+    "PersonajesInterpretados": ["Detective Mills", "N/A"],
+    "Biografia": "David Caruso es un actor estadounidense conocido por su papel en 'Seven' como el detective David Mills.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 16,
+    "Nombre": "Michael",
+    "Apellidos": "C. Hall",
+    "FechaNacimiento": "1971-02-01",
+    "PeliculasInterpretadas": ["Dexter", "Six Feet Under"],
+    "PersonajesInterpretados": ["Dexter Morgan", "David Fisher"],
+    "Biografia": "Michael C. Hall es un actor estadounidense conocido por su papel principal en la serie 'Dexter' como el asesino en serie Dexter Morgan.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 17,
+    "Nombre": "Jennifer",
+    "Apellidos": "Carpenter",
+    "FechaNacimiento": "1979-12-07",
+    "PeliculasInterpretadas": ["Dexter", "The Exorcism of Emily Rose"],
+    "PersonajesInterpretados": ["Debra Morgan", "Emily Rose"],
+    "Biografia": "Jennifer Carpenter es una actriz estadounidense conocida por su papel como Debra Morgan en 'Dexter'.",
+    "Profesion": "Actriz",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 18,
+    "Nombre": "John",
+    "Apellidos": "Lithgow",
+    "FechaNacimiento": "1945-10-19",
+    "PeliculasInterpretadas": ["Dexter", "The World According to Garp", "Cliffhanger"],
+    "PersonajesInterpretados": ["Trinity Killer", "N/A", "N/A"],
+    "Biografia": "John Lithgow es un actor estadounidense conocido por interpretar a uno de los villanos más memorables de 'Dexter', el asesino Trinity Killer.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  
+  {
+    "IdActor": 19,
+    "Nombre": "Diane",
+    "Apellidos": "Keaton",
+    "FechaNacimiento": "1946-01-05",
+    "PeliculasInterpretadas": ["El padrino", "Annie Hall", "Manhattan"],
+    "PersonajesInterpretados": ["Kay Adams", "Annie Hall", "Mary Wilkie"],
+    "Biografia": "Diane Keaton es una actriz y directora estadounidense aclamada por su versatilidad. Conocida por su interpretación de Kay Adams en 'El padrino', Keaton ha tenido una exitosa carrera tanto en la comedia como en el drama, destacándose en filmes como 'Annie Hall'.",
+    "Profesion": "Actriz",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+
+  {
+    "IdActor": 20,
+    "Nombre": "Robert",
+    "Apellidos": "De Niro",
+    "FechaNacimiento": "1943-08-17",
+    "PeliculasInterpretadas": ["El padrino", "El padrino II", "El padrino 3"],
+    "PersonajesInterpretados": ["El Padrino II", "Taxi Driver", "Raging Bull"],
+    "Biografia": "Robert De Niro es un actor estadounidense conocido por su capacidad para interpretar papeles complejos y su gran legado en películas como 'El Padrino 2'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 21,
+    "Nombre": "Frankie",
+    "Apellidos": "Faison",
+    "FechaNacimiento": "1949-06-10",
+    "PeliculasInterpretadas": ["The Wire", "The Silence of the Lambs", "Coming to America"],
+    "PersonajesInterpretados": ["Dennis","Cutty", "Wise", "Barney", "Maurice"],
+    "Biografia": "Frankie Faison es un actor estadounidense conocido por su papel como Dennis 'Cutty' Wise en 'The Wire'. También ha tenido roles memorables en películas como 'The Silence of the Lambs' y 'Coming to America'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  
+  {
+    "IdActor": 22,
+    "Nombre": "Idris",
+    "Apellidos": "Elba",
+    "FechaNacimiento": "1972-09-06",
+    "PeliculasInterpretadas": ["The Wire", "Luther", "Pacific Rim"],
+    "PersonajesInterpretados": ["Stringer Bell", "John Luther", "Stacker Pentecost"],
+    "Biografia": "Idris Elba es un actor británico conocido por su papel en 'The Wire' como Stringer Bell y en 'Luther' como el detective John Luther.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 23,
+    "Nombre": "Bryan",
+    "Apellidos": "Cranston",
+    "FechaNacimiento": "1956-03-07",
+    "PeliculasInterpretadas": ["Breaking Bad", "Malcolm in the Middle", "Argo"],
+    "PersonajesInterpretados": ["Walter White", "Hal", "N/A"],
+    "Biografia": "Bryan Cranston es un actor estadounidense conocido por su papel de Walter White en 'Breaking Bad'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 24,
+    "Nombre": "Aaron",
+    "Apellidos": "Paul",
+    "FechaNacimiento": "1979-08-27",
+    "PeliculasInterpretadas": ["Breaking Bad", "Need for Speed", "Exodus: Gods and Kings"],
+    "PersonajesInterpretados": ["Jesse Pinkman", "Tobey Marshall", "N/A"],
+    "Biografia": "Aaron Paul es un actor estadounidense conocido por su papel de Jesse Pinkman en 'Breaking Bad'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  
+  {
+    "IdActor": 25,
+    "Nombre": "Liam",
+    "Apellidos": "Neeson",
+    "FechaNacimiento": "1952-06-07",
+    "PeliculasInterpretadas": ["La lista de Schindler", "Taken", "Batman Begins"],
+    "PersonajesInterpretados": ["Oskar Schindler", "Bryan Mills", "Ra's al Ghul"],
+    "Biografia": "Liam Neeson es un actor irlandés conocido por sus papeles en películas como 'La lista de Schindler' y 'Taken'. Ha interpretado a héroes y villanos con gran éxito en Hollywood.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+
+  {
+    "IdActor": 26,
+    "Nombre": "John",
+    "Apellidos": "C. McGinley",
+    "FechaNacimiento": "1959-08-03",
+    "PeliculasInterpretadas": ["Seven", "Scrubs", "The Rock"],
+    "PersonajesInterpretados": ["Detective Taylor", "Dr. Cox", "Commander"],
+    "Biografia": "John C. McGinley es un actor estadounidense conocido por sus papeles tanto en cine como en televisión. En 'Seven', interpretó al detective Taylor, pero es más famoso por su papel como el Dr. Cox en la serie de televisión 'Scrubs'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+
+  {
+    "IdActor": 27,
+    "Nombre": "David",
+    "Apellidos": "Zayas",
+    "FechaNacimiento": "1962-08-15",
+    "PeliculasInterpretadas": ["Dexter", "The Expendables", "Lights Out"],
+    "PersonajesInterpretados": ["Angel Batista", "Machete", "Fenton"],
+    "Biografia": "David Zayas es un actor estadounidense conocido por su papel como Angel Batista en 'Dexter'. También ha trabajado en películas de acción como 'The Expendables' y 'Machete'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 28,
+    "Nombre": "James",
+    "Apellidos": "Remar",
+    "FechaNacimiento": "1953-12-31",
+    "PeliculasInterpretadas": ["Dexter", "The Warriors", "48 Hrs."],
+    "PersonajesInterpretados": ["Harry Morgan", "Ajax", "Jack Cates"],
+    "Biografia": "James Remar es un actor estadounidense conocido por interpretar a Harry Morgan, el padre adoptivo de Dexter, en la serie 'Dexter'. También ha trabajado en películas como 'The Warriors' y '48 Hrs.'",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+
+  {
+    "IdActor": 29,
+    "Nombre": "Andy",
+    "Apellidos": "Garcia",
+    "FechaNacimiento": "1956-04-12",
+    "PeliculasInterpretadas": ["El padrino 3", "Ocean's Eleven", "The Untouchables"],
+    "PersonajesInterpretados": ["Vincent Mancini", "Tess Ocean", "George Stone"],
+    "Biografia": "Andy García es un actor cubano-estadounidense conocido por su papel como Vincent Mancini en 'El padrino 3'. Su carrera también ha incluido papeles en películas como 'Ocean's Eleven' y 'The Untouchables'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+
+  {
+    "IdActor": 30,
+    "Nombre": "Talia",
+    "Apellidos": "Shire",
+    "FechaNacimiento": "1946-04-25",
+    "PeliculasInterpretadas": ["El padrino", "El padrino II", "El padrino 3"],
+    "PersonajesInterpretados": ["Connie Corleone", "Connie Corleone", "Connie Corleone"],
+    "Biografia": "Talia Shire es una actriz estadounidense conocida por su interpretación de Connie Corleone en la saga 'El padrino'. Además, es famosa por su papel en la saga 'Rocky', donde interpreta a Adrian Pennino.",
+    "Profesion": "Actriz",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+
+  {
+    "IdActor": 31,
+    "Nombre": "Dominic",
+    "Apellidos": "West",
+    "FechaNacimiento": "1969-10-15",
+    "PeliculasInterpretadas": ["The Wire", "The Affair", "300"],
+    "PersonajesInterpretados": ["Jimmy McNulty", "Noah Solloway", "Artemisia"],
+    "Biografia": "Dominic West es un actor británico conocido por su papel de Jimmy McNulty en la serie 'The Wire'. También es reconocido por su trabajo en 'The Affair' y '300'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 32,
+    "Nombre": "Wendell",
+    "Apellidos": "Pierce",
+    "FechaNacimiento": "1963-12-08",
+    "PeliculasInterpretadas": ["The Wire", "Treme", "Selma"],
+    "PersonajesInterpretados": ["Bunk Moreland", "Antoine Batiste", "Henry"],
+    "Biografia": "Wendell Pierce es un actor estadounidense conocido por su papel de Bunk Moreland en 'The Wire'. Ha trabajado también en series como 'Treme' y en la película 'Selma'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 33,
+    "Nombre": "Michael",
+    "Apellidos": "K. Williams",
+    "FechaNacimiento": "1966-11-22",
+    "PeliculasInterpretadas": ["The Wire", "Boardwalk Empire", "12 Years a Slave"],
+    "PersonajesInterpretados": ["Omar Little", "Chalky White", "Slave"],
+    "Biografia": "Michael K. Williams fue un actor estadounidense reconocido principalmente por su papel como Omar Little en 'The Wire'. Su carrera abarcó una amplia variedad de géneros, desde drama hasta acción.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+
+  {
+    "IdActor": 34,
+    "Nombre": "Anna",
+    "Apellidos": "Gunn",
+    "FechaNacimiento": "1968-08-11",
+    "PeliculasInterpretadas": ["Breaking Bad", "Little Red Wagon", "The Mindy Project"],
+    "PersonajesInterpretados": ["Skyler White", "N/A", "N/A"],
+    "Biografia": "Anna Gunn es una actriz estadounidense conocida por su papel de Skyler White en 'Breaking Bad'. También ha trabajado en series como 'The Mindy Project'.",
+    "Profesion": "Actriz",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 35,
+    "Nombre": "Dean",
+    "Apellidos": "Norris",
+    "FechaNacimiento": "1963-04-08",
+    "PeliculasInterpretadas": ["Breaking Bad", "The Firm", "Love & Mercy"],
+    "PersonajesInterpretados": ["Hank Schrader", "N/A", "N/A"],
+    "Biografia": "Dean Norris es un actor estadounidense conocido por interpretar a Hank Schrader en 'Breaking Bad'. Ha tenido papeles en varias películas y series, incluidos 'The Firm' y 'Love & Mercy'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 36,
+    "Nombre": "RJ",
+    "Apellidos": "Mitte",
+    "FechaNacimiento": "1992-08-21",
+    "PeliculasInterpretadas": ["Breaking Bad", "The Highway Is for Gamblers", "Loser"],
+    "PersonajesInterpretados": ["Walter White Jr.", "N/A", "N/A"],
+    "Biografia": "RJ Mitte es un actor estadounidense conocido por interpretar a Walter White Jr. en 'Breaking Bad'. Es reconocido por su trabajo en la industria televisiva y por su activismo relacionado con la parálisis cerebral.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+
+  {
+    "IdActor": 37,
+    "Nombre": "Ben",
+    "Apellidos": "Kingsley",
+    "FechaNacimiento": "1943-12-31",
+    "PeliculasInterpretadas": ["La lista de Schindler", "Gandhi", "Iron Man 3"],
+    "PersonajesInterpretados": ["Itzhak Stern", "Mahatma Gandhi", "The Mandarin"],
+    "Biografia": "Ben Kingsley es un actor británico ganador del Óscar, reconocido por su interpretación de Gandhi, además de su papel de Itzhak Stern en 'La lista de Schindler'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 38,
+    "Nombre": "Ralph",
+    "Apellidos": "Fiennes",
+    "FechaNacimiento": "1962-12-22",
+    "PeliculasInterpretadas": ["La lista de Schindler", "Harry Potter", "The English Patient"],
+    "PersonajesInterpretados": ["Amon Goeth", "Lord Voldemort", "Count Almásy"],
+    "Biografia": "Ralph Fiennes es un actor británico conocido por su interpretación del malvado Amon Goeth en 'La lista de Schindler' y de Lord Voldemort en la saga de 'Harry Potter'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 39,
+    "Nombre": "Caroline",
+    "Apellidos": "Goodall",
+    "FechaNacimiento": "1962-11-13",
+    "PeliculasInterpretadas": ["La lista de Schindler", "The Odyssey", "Hook"],
+    "PersonajesInterpretados": ["Emilie Schindler", "N/A", "Moira"],
+    "Biografia": "Caroline Goodall es una actriz británica conocida por su papel de Emilie Schindler en 'La lista de Schindler' y por otras apariciones en películas como 'Hook'.",
+    "Profesion": "Actriz",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 40,
+    "Nombre": "Jonathan",
+    "Apellidos": "Sagall",
+    "FechaNacimiento": "1964-10-17",
+    "PeliculasInterpretadas": ["La lista de Schindler", "La fuerza del amor", "Holly"],
+    "PersonajesInterpretados": ["Poldek Pfefferberg", "N/A", "N/A"],
+    "Biografia": "Jonathan Sagall es un actor israelí conocido por su papel de Poldek Pfefferberg en 'La lista de Schindler'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+
+  {
+    "IdActor": 41,
+    "Nombre": "Matthew",
+    "Apellidos": "Modine",
+    "FechaNacimiento": "1959-03-22",
+    "PeliculasInterpretadas": ["Full Metal Jacket", "The Dark Knight Rises", "Cutthroat Island"],
+    "PersonajesInterpretados": ["Joker", "John Blake", "N/A"],
+    "Biografia": "Matthew Modine es un actor estadounidense conocido por su papel de Joker en 'Full Metal Jacket', así como por su participación en 'The Dark Knight Rises'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 42,
+    "Nombre": "Adam",
+    "Apellidos": "Baldwin",
+    "FechaNacimiento": "1962-02-27",
+    "PeliculasInterpretadas": ["Full Metal Jacket", "Serenity", "My Bodyguard"],
+    "PersonajesInterpretados": ["Animal Mother", "Jayne Cobb", "Clint"],
+    "Biografia": "Adam Baldwin es un actor estadounidense conocido por su papel de Animal Mother en 'Full Metal Jacket' y por su interpretación de Jayne Cobb en 'Serenity'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 43,
+    "Nombre": "Vincent",
+    "Apellidos": "D'Onofrio",
+    "FechaNacimiento": "1959-06-30",
+    "PeliculasInterpretadas": ["Full Metal Jacket", "Men in Black", "The Cell"],
+    "PersonajesInterpretados": ["Private Pyle", "Edgar the Bug", "Carl Stargher"],
+    "Biografia": "Vincent D'Onofrio es un actor y productor estadounidense conocido por su papel de Private Pyle en 'Full Metal Jacket' y su interpretación de Edgar the Bug en 'Men in Black'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 44,
+    "Nombre": "Lee",
+    "Apellidos": "Ermey",
+    "FechaNacimiento": "1944-03-24",
+    "PeliculasInterpretadas": ["Full Metal Jacket", "The Texas Chainsaw Massacre", "Mississippi Burning"],
+    "PersonajesInterpretados": ["Gunnery Sergeant Hartman", "Sheriff Hoyt", "Captain Frank Pell"],
+    "Biografia": "Lee Ermey fue un actor y ex-Marine estadounidense, famoso por su papel como Gunnery Sergeant Hartman en 'Full Metal Jacket' y por su carrera en películas de acción.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 45,
+    "Nombre": "Dorian",
+    "Apellidos": "Harewood",
+    "FechaNacimiento": "1961-08-06",
+    "PeliculasInterpretadas": ["Full Metal Jacket", "The Last Dragon", "The Color Purple"],
+    "PersonajesInterpretados": ["Eightball", "N/A", "N/A"],
+    "Biografia": "Dorian Harewood es un actor estadounidense conocido por su papel como Eightball en 'Full Metal Jacket'. También ha trabajado en películas y series de televisión.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+
+  {
+    "IdActor": 46,
+    "Nombre": "Dan",
+    "Apellidos": "Castellaneta",
+    "FechaNacimiento": "1957-10-29",
+    "PeliculasInterpretadas": ["Los Simpsons", "The Simpsons Movie", "The Simpsons Movie 2"],
+    "PersonajesInterpretados": ["Homer Simpson", "Homer Simpson", "Homer Simpson"],
+    "Biografia": "Dan Castellaneta es un actor de voz estadounidense conocido por su papel como Homer Simpson en 'Los Simpsons'.",
+    "Profesion": "Doblador",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 47,
+    "Nombre": "Julie",
+    "Apellidos": "Kavner",
+    "FechaNacimiento": "1950-09-07",
+    "PeliculasInterpretadas": ["Los Simpsons", "The Simpsons Movie", "The Simpsons Movie 2"],
+    "PersonajesInterpretados": ["Marge Simpson", "Marge Simpson", "Marge Simpson"],
+    "Biografia": "Julie Kavner es una actriz de voz estadounidense, famosa por interpretar a Marge Simpson en 'Los Simpsons'.",
+    "Profesion": "Dobladora",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 48,
+    "Nombre": "Nancy",
+    "Apellidos": "Cartwright",
+    "FechaNacimiento": "1957-10-25",
+    "PeliculasInterpretadas": ["Los Simpsons", "The Simpsons Movie", "The Simpsons Movie 2"],
+    "PersonajesInterpretados": ["Bart Simpson", "Bart Simpson", "Bart Simpson"],
+    "Biografia": "Nancy Cartwright es una actriz de voz estadounidense conocida por interpretar a Bart Simpson en 'Los Simpsons'.",
+    "Profesion": "Dobladora",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 49,
+    "Nombre": "Yeardley",
+    "Apellidos": "Smith",
+    "FechaNacimiento": "1964-07-03",
+    "PeliculasInterpretadas": ["Los Simpsons", "The Simpsons Movie", "The Simpsons Movie 2"],
+    "PersonajesInterpretados": ["Lisa Simpson", "Lisa Simpson", "Lisa Simpson"],
+    "Biografia": "Yeardley Smith es una actriz de voz estadounidense famosa por interpretar a Lisa Simpson en 'Los Simpsons'.",
+    "Profesion": "Dobladora",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 50,
+    "Nombre": "Hank",
+    "Apellidos": "Azaria",
+    "FechaNacimiento": "1964-04-25",
+    "PeliculasInterpretadas": ["Los Simpsons", "The Simpsons Movie", "The Simpsons Movie 2"],
+    "PersonajesInterpretados": ["Apu Nahasapeemapetilon", "Apu Nahasapeemapetilon", "Apu Nahasapeemapetilon"],
+    "Biografia": "Hank Azaria es un actor de voz estadounidense conocido por sus diversos papeles en 'Los Simpsons', incluyendo el personaje de Apu.",
+    "Profesion": "Doblador",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+
+  {
+    "IdActor": 51,
+    "Nombre": "Carl",
+    "Apellidos": "Sagan",
+    "FechaNacimiento": "1934-11-09",
+    "PeliculasInterpretadas": ["Cosmos: Un Viaje Personal"],
+    "PersonajesInterpretados": ["Presentador"],
+    "Biografia": "Carl Sagan fue un astrónomo, astrofísico y un reconocido presentador del famoso programa científico 'Cosmos: Un Viaje Personal'.",
+    "Profesion": "Creador",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 52,
+    "Nombre": "Ann",
+    "Apellidos": "Druyan",
+    "FechaNacimiento": "1949-06-13",
+    "PeliculasInterpretadas": ["Cosmos: Un Viaje Personal"],
+    "PersonajesInterpretados": ["Creadora"],
+    "Biografia": "Ann Druyan es una escritora y productora de televisión, conocida por ser una de las creadoras de 'Cosmos: Un Viaje Personal'.",
+    "Profesion": "Creadora",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 53,
+    "Nombre": "Steven",
+    "Apellidos": "Soter",
+    "FechaNacimiento": "1954-11-20",
+    "PeliculasInterpretadas": ["Cosmos: Un Viaje Personal"],
+    "PersonajesInterpretados": ["Creador"],
+    "Biografia": "Steven Soter es un astrofísico y escritor, mejor conocido por su participación como creador de 'Cosmos: Un Viaje Personal'.",
+    "Profesion": "Creador",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 54,
+    "Nombre": "Vangelis",
+    "Apellidos": "",
+    "FechaNacimiento": "1943-03-29",
+    "PeliculasInterpretadas": ["Cosmos: Un Viaje Personal"],
+    "PersonajesInterpretados": ["Compositor"],
+    "Biografia": "Vangelis es un compositor griego conocido por su música ambiental, incluida la banda sonora de 'Cosmos: Un Viaje Personal'.",
+    "Profesion": "Compositor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 55,
+    "Nombre": "Gregory",
+    "Apellidos": "Andorfer",
+    "FechaNacimiento": "1948-09-14",
+    "PeliculasInterpretadas": ["Cosmos: Un Viaje Personal"],
+    "PersonajesInterpretados": ["Productor"],
+    "Biografia": "Gregory Andorfer es un productor y ejecutivo de televisión, conocido por su trabajo en la producción de 'Cosmos: Un Viaje Personal'.",
+    "Profesion": "Productor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+
+  {
+    "IdActor": 56,
+    "Nombre": "Jodie",
+    "Apellidos": "Foster",
+    "FechaNacimiento": "1962-11-19",
+    "PeliculasInterpretadas": ["El silencio de los corderos"],
+    "PersonajesInterpretados": ["Clarice Starling"],
+    "Biografia": "Jodie Foster es una actriz y directora estadounidense conocida por su papel principal como Clarice Starling en 'El Silencio de los Corderos'.",
+    "Profesion": "Actriz",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 57,
+    "Nombre": "Anthony",
+    "Apellidos": "Hopkins",
+    "FechaNacimiento": "1937-12-31",
+    "PeliculasInterpretadas": ["El silencio de los corderos"],
+    "PersonajesInterpretados": ["Hannibal Lecter"],
+    "Biografia": "Anthony Hopkins es un actor británico reconocido mundialmente por su papel como Hannibal Lecter en 'El Silencio de los Corderos'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 58,
+    "Nombre": "Scott",
+    "Apellidos": "Glenn",
+    "FechaNacimiento": "1941-01-26",
+    "PeliculasInterpretadas": ["El silencio de los corderos"],
+    "PersonajesInterpretados": ["Jack Crawford"],
+    "Biografia": "Scott Glenn es un actor estadounidense conocido por interpretar a Jack Crawford en 'El Silencio de los Corderos'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 59,
+    "Nombre": "Ted",
+    "Apellidos": "Levine",
+    "FechaNacimiento": "1957-05-29",
+    "PeliculasInterpretadas": ["El silencio de los corderos"],
+    "PersonajesInterpretados": ["Buffalo Bill"],
+    "Biografia": "Ted Levine es un actor estadounidense conocido por su papel como Buffalo Bill en 'El Silencio de los Corderos'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 60,
+    "Nombre": "Kenneth",
+    "Apellidos": "Utt",
+    "FechaNacimiento": "1936-07-05",
+    "PeliculasInterpretadas": ["El silencio de los corderos"],
+    "PersonajesInterpretados": ["Productor"],
+    "Biografia": "Kenneth Utt fue un productor estadounidense conocido por su trabajo en la producción de 'El Silencio de los Corderos'.",
+    "Profesion": "Productor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+
+  {
+    "IdActor": 61,
+    "Nombre": "Wunmi",
+    "Apellidos": "Mosaku",
+    "FechaNacimiento": "1986-07-31",
+    "PeliculasInterpretadas": ["Black Mirror"],
+    "PersonajesInterpretados": ["Karen", "N/A"],
+    "Biografia": "Wunmi Mosaku es una actriz británica conocida por su papel como Karen en el episodio 'Metalhead' de 'Black Mirror'.",
+    "Profesion": "Actriz",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 62,
+    "Nombre": "Daniel",
+    "Apellidos": "Lapaine",
+    "FechaNacimiento": "1977-01-01",
+    "PeliculasInterpretadas": ["Black Mirror"],
+    "PersonajesInterpretados": ["Kenneth", "N/A"],
+    "Biografia": "Daniel Lapaine es un actor británico conocido por su participación en 'Black Mirror', en el episodio 'Hated in the Nation'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 63,
+    "Nombre": "Michaela",
+    "Apellidos": "Coel",
+    "FechaNacimiento": "1987-10-01",
+    "PeliculasInterpretadas": ["Black Mirror"],
+    "PersonajesInterpretados": ["Yasmin", "N/A"],
+    "Biografia": "Michaela Coel es una actriz y guionista británica conocida por su participación en 'Black Mirror', en el episodio 'USS Callister'.",
+    "Profesion": "Actriz",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 64,
+    "Nombre": "Anjana",
+    "Apellidos": "Vasan",
+    "FechaNacimiento": "1990-10-22",
+    "PeliculasInterpretadas": ["Black Mirror"],
+    "PersonajesInterpretados": ["Sukhvinder", "N/A"],
+    "Biografia": "Anjana Vasan es una actriz británica conocida por su participación en el episodio 'Fifteen Million Merits' de 'Black Mirror'.",
+    "Profesion": "Actriz",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 65,
+    "Nombre": "Joshua",
+    "Apellidos": "James",
+    "FechaNacimiento": "1989-03-14",
+    "PeliculasInterpretadas": ["Black Mirror"],
+    "PersonajesInterpretados": ["Tom", "N/A"],
+    "Biografia": "Joshua James es un actor británico conocido por su participación en el episodio 'White Christmas' de 'Black Mirror'.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+
+  {
+    "IdActor": 66,
+    "Nombre": "Robert",
+    "Apellidos": "Duvall",
+    "FechaNacimiento": "1931-01-05",
+    "PeliculasInterpretadas": ["El padrino II", "Apocalypse Now", "The Road"],
+    "PersonajesInterpretados": ["Tom Hagen", "Lieutenant Colonel Kilgore", "The Man"],
+    "Biografia": "Robert Duvall es un actor y director estadounidense, ganador de un Oscar, conocido por sus papeles en 'El Padrino' y 'Apocalypse Now'. Es reconocido por su versatilidad en cine y televisión.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  },
+  {
+    "IdActor": 67,
+    "Nombre": "John",
+    "Apellidos": "Cazale",
+    "FechaNacimiento": "1935-08-12",
+    "PeliculasInterpretadas": ["El Padrino", "El padrino II", "Dog Day Afternoon", "The Conversation"],
+    "PersonajesInterpretados": ["Fredo Corleone", "Fredo Corleone", "Salvatore", "Stan"],
+    "Biografia": "John Cazale fue un actor estadounidense conocido por su actuación en los clásicos 'El Padrino' y 'El Padrino 2', además de su participación en otros grandes filmes como 'Dog Day Afternoon'. Su carrera fue corta debido a su muerte prematura, pero su legado permanece.",
+    "Profesion": "Actor",
+    "RutaFotoActor": "../media/img/Al_Pacino.jpg"
+  }
+  
+  
+
+]
