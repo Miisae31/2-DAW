@@ -1,0 +1,50 @@
+.contedor-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formulario-login {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #cccc;
+    background-color: #f9f9f9;
+}
+
+.formulario-grupo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 93%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#boton-login {
+    background-color: #007bff;
+    color: white;
+}
+
+#boton-convidado {
+    background-color: #6c757d;
+    color: white;
+}

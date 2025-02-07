@@ -1,0 +1,12 @@
+<!-- Este botón redirixe á páxina de portada -->
+<button routerLink="/" routerLinkActive="active">Portada</button>
+
+<!-- Este botón redirixe á páxina de probas pasándolle coma parámetro un obxecto que ten dúas propiedades ("numero1" e "numero2") -->
+<button [routerLink]="['/probas']" [queryParams]="{ numero1: 15, numero2: 20 }" routerLinkActive="active">Probas</button>
+
+<!-- Este botón redirixe á páxina de probas pasándolle parámetros a través de TS -->
+ <button (click)="navegar()">Outro camiño a Probas</button>
+
+<!-- Dentro de 'router-outler' cargaránse as distintas compoñentes cando a súa ruta sexa accedida -->
+<router-outlet></router-outlet>
+ 

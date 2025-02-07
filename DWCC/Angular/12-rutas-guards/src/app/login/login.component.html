@@ -1,0 +1,18 @@
+<div class="contedor-login">
+    <form [formGroup]="formularioLogin" class="formulario-login">
+        <div class="formulario-grupo">
+            <label for="usuario">Usuario:</label>
+            <input type="text" placeholder="Usuario..." formControlName="usuario">
+        </div>
+        <div class="formulario-grupo">
+            <label for="contrasinal">Contrasinal:</label>
+            <input type="password" formControlName="contrasinal">
+        </div>
+        <button type="button" id="boton-login" (click)="iniciarSesion()">
+            Iniciar sesión
+        </button>
+        <button type="button" id="boton-convidado" (click)="entrarConvidado()">
+            Entrar como convidado
+        </button>
+    </form>
+</div>

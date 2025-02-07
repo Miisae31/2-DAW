@@ -1,0 +1,10 @@
+<div class="contedor-portada">
+    <!-- Amosamos ou ben o nome de usuario logueado ou a palabra "convidado" -->
+    <h1>Iniciou vostede sesión como {{ usuario ? '' + usuario : ' convidado' }}</h1>
+
+    <!-- Este enlace redirixe á compoñente "restrinxido" -->
+    <a [routerLink]="['/restrinxido']">Ver contido restrinxido</a>
+
+    <!-- Este enlace chama ao método que pecha a sesión de usuario -->
+     <a (click)="pecharSesion()">Pechar sesión</a>
+</div>
