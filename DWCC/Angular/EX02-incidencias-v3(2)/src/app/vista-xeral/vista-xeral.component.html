@@ -1,0 +1,15 @@
+<h1>XESTOR DE INCIDENCIAS</h1>
+
+<div class="contedor">
+    <div>
+        <app-formulario-alta></app-formulario-alta>
+    </div>
+    <div>
+        <app-pendentes *ngIf="algunhaPendente()" [incidencias]="incidencias"></app-pendentes>
+        <h1 *ngIf="!algunhaPendente()">Agora mesmo non hai incidencias pendentes no sistema</h1>
+    </div>
+    <div>
+        <app-resoltas *ngIf="algunhaResolta()" [incidencias]="incidencias"></app-resoltas>
+        <h1 *ngIf="!algunhaResolta()">Agora mesmo non hai incidencias resoltas no sistema</h1>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+th,td {
+    border: 1px solid black;
+}
+
+.nivelGrave {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nivelMedio {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nivelLeve {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.solucionada {
+    background-color: lightgreen;
+}

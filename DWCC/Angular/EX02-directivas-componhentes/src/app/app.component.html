@@ -1,0 +1,6 @@
+<div id="contedor">
+    <ng-container *ngFor="let articulo of articulos">
+        <app-tarxeta class="tarxeta" *ngIf="articulo.rebaixa>0.15" [entrada]="articulo.nome">
+        </app-tarxeta>
+    </ng-container>
+</div>

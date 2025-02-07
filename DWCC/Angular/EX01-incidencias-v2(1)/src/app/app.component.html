@@ -1,0 +1,5 @@
+<app-pendentes *ngIf="algunhaPendente()" [incidencias]="incidencias"></app-pendentes>
+<h1 *ngIf="!algunhaPendente()" >Agora mesmo non hai incidencias pendentes no sistema</h1>
+<br>
+<app-resoltas *ngIf="algunhaResolta()" [incidencias]="incidencias"></app-resoltas>
+<h1 *ngIf="!algunhaResolta()" >Agora mesmo non hai incidencias resoltas no sistema</h1>

@@ -1,0 +1,28 @@
+<h1>Crear incidencia</h1>
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="formularioGrupo">
+        <label>
+            Data
+        </label>
+        <input type="text" class="controlFormulario" formControlName="data">
+    </div>
+    <div class="formularioGrupo">
+        <label for="">
+            Descrición
+        </label>
+        <input type="text" class="controlFormulario" formControlName="descricion">
+    </div>
+    <div class="formularioGrupo">
+        <label for="">
+            Usuario
+        </label>
+        <input type="text" class="controlFormulario" formControlName="usuario">
+    </div>
+    <div class="formularioGrupo">
+        <label for="">
+            Nivel
+        </label>
+        <input type="number" class="controlFormulario" formControlName="nivel">
+    </div>
+    <input type="submit" value="Crear">
+</form>

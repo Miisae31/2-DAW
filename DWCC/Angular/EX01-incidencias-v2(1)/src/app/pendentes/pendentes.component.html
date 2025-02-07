@@ -1,0 +1,27 @@
+<h1>Incidencias actuais no sistema</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>Descrición</th>
+            <th>Usuari&#64;</th>
+            <th>Nivel</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let incidencia of incidencias">
+            <tr *ngIf="!incidencia.solucionada">
+                <td>{{ incidencia.data }}</td>
+                <td>{{ incidencia.descricion }}</td>
+                <td>{{ incidencia.usuario }}</td>
+                <td
+                    [ngClass]="{ 'nivelGrave' : incidencia.nivel == 3, 'nivelMedio' : incidencia.nivel == 2, 'nivelLeve' : incidencia.nivel == 1, }">
+                    {{ incidencia.nivel }}</td>
+                <td>
+                    <button (click)="resolverIncidencia(incidencia)">Resolver</button>
+                </td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>
