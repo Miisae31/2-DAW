@@ -1,0 +1,9 @@
+<!-- Enlazamos os datos do obxecto usuario -->
+ <p>{{ sainza.uid }}</p>
+ <p>{{ sainza.nome }}</p>
+ <p>{{ sainza.login }}</p>
+
+ <!-- Percorremos con ngFor o campo de membresías amosando todos os grupos aos que pertence a usuaria -->
+<p *ngFor="let grupo of sainza.membresias">
+    {{ grupo.nome }}
+</p>

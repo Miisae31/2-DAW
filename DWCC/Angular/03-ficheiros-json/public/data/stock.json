@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "taladro percutor",
+        "prezo": 350.99
+    },
+    {
+        "nome": "taladro batería",
+        "prezo": 160.99
+    },
+    {
+        "nome": "mesturador pintura",
+        "prezo": 230.99
+    },
+    {
+        "nome": "formigoneira",
+        "prezo": 550.99
+    },
+    {
+        "nome": "martelo pneumático",
+        "prezo": 250.99
+    },
+    {
+        "nome": "rozadora",
+        "prezo": 180.99
+    }
+]
