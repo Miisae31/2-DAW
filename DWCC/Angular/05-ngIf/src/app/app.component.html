@@ -1,0 +1,10 @@
+<!-- Este botón conmuta o valor da variable booleana "cargar" -->
+<button (click)="cargar = !cargar">
+  MUDAR
+</button>
+
+<!-- Escribimos na páxina o valor actual da variable "cargar" -->
+ <p>O valor actual da variable "cargar" é {{ cargar }}</p>
+
+<!-- Este elemento de texto cargarase ou non en DOM en función do valor de "cargar" -->
+<h1 *ngIf="cargar">Elemento cargado mediante *ngIf</h1>

@@ -1,0 +1,8 @@
+<h1>Equipos de {{division}} División</h1>
+<ul>
+    <li *ngFor="let equipo of equipos">{{ equipo }}</li>
+</ul>
+
+<button (click)="mudarDivision()">
+    MUDAR DIVISIÓN
+</button>
