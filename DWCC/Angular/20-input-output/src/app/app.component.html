@@ -1,0 +1,7 @@
+<p>Valor da propiedade compartida na compoñente nai: {{ compartida }}</p>
+
+ <button (click)="incrementar()">
+    INCREMENTAR
+ </button>
+
+ <app-contido [compartida]="compartida" (emisor)="recibirDatos($event)"></app-contido>

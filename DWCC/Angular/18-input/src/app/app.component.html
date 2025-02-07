@@ -1,0 +1,7 @@
+<!-- Incorporamos a etiqueta da compoñente filla "contido" e usamos un enlazado de propiedades para pasarlle o valor da propiedade "compartida", que corresponderá na compoñente filla coa propiedade "recibida"-->
+ <app-contido [recibida]="compartida"></app-contido>
+
+ <!-- Este botón vainos permitir mudar o valor da propiedade "compartida" para poder comprobar que o cambio efectivamente se produce na compoñente filla -->
+ <button (click)="compartida=compartida+1">
+    Incrementar
+ </button>
