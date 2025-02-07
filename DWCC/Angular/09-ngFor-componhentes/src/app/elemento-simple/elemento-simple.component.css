@@ -1,0 +1,7 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+    border: 1px solid brown;
+    border-radius: 5px;
+}

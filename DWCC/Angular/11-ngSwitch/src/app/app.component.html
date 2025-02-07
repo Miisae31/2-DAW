@@ -1,0 +1,15 @@
+<h1>Elemento cargado en función do valor de "elem" mediante a directiva *ngSwitch</h1>
+
+<button (click)="elem>5 ? elem=1 : elem=elem+1">
+    CAMBIAR DE ELEMENTO
+</button>
+
+<div [ngSwitch]="elem">
+    <p *ngSwitchCase="1">O elemento seleccionado foi {{listaxe[0]}}</p>
+    <p *ngSwitchCase="2">O elemento seleccionado foi {{listaxe[1]}}</p>
+    <p *ngSwitchCase="3">O elemento seleccionado foi {{listaxe[2]}}</p>
+    <p *ngSwitchCase="4">O elemento seleccionado foi {{listaxe[3]}}</p>
+    <p *ngSwitchCase="5">O elemento seleccionado foi {{listaxe[4]}}</p>
+    <p *ngSwitchCase="6">O elemento seleccionado foi {{listaxe[5]}}</p>
+    <p *ngSwitchDefault>Non é un elemento válido da listaxe</p>
+</div>

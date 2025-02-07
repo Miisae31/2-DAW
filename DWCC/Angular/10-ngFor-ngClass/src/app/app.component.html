@@ -1,0 +1,4 @@
+<h1>Equipos de Primeira División</h1>
+<ul>
+    <li *ngFor="let equipo of equipos; let impar=odd; let par=even;" [ngClass]="{textoVerde: impar, textoVioleta: par}">{{ equipo }}</li>
+</ul>

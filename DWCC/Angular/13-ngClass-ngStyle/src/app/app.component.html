@@ -1,0 +1,13 @@
+<button (click)="mudarEstado()">
+    CAMBIAR ESTADO
+</button>
+
+<!-- Exemplo de estilos dinámicos mediante a directiva ngClass -->
+<p [ngClass]="{ 'activo': activo, 'inactivo': !activo}">
+    O estado do sistema é {{ estado }}
+</p>
+
+<!-- Exemplo de estilos dinámicos mediante a directiva ngStyle -->
+<p [ngStyle]="{'color': activo ? 'green' : 'red'}">
+    O estado do sistema é {{ estado }}
+</p>
