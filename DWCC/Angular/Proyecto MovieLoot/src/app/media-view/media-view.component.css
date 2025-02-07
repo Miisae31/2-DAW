@@ -1,0 +1,482 @@
+/* Estilo para la clase .paginaEntera */
+.paginaEntera {
+    margin-left: 3%; /* Aplica un margen izquierdo del 3% al contenido */
+    margin-right: 3%; /* Aplica un margen derecho del 3% al contenido */
+}
+
+/* Estilo para la clase .content */
+.content {
+    margin-left: 0; /* Elimina el margen izquierdo */
+    margin-right: 0; /* Elimina el margen derecho */
+    color: white; /* Establece el color del texto en blanco */
+    margin-top: 20px;
+    /* Añade un marge
+       n superior de 20px */
+    padding: 20px; /* Añade un relleno interno de 20px en todos los lados */
+    background: linear-gradient(to bottom, #310141, #150018); /* Establece un fondo con un gradiente de color desde arriba hacia abajo */
+}
+
+/* Estilo para la clase .movie-title */
+.movie-title {
+    width: 800px; /* Define el ancho de la caja de título de la película */
+    text-align: right; /* Alinea el texto del título a la derecha */
+    margin-bottom: 20px; /* Aplica un margen inferior de 20px */
+}
+
+.movie-title {
+    font-size: 40px; /* Establece el tamaño de fuente del título en 40px */
+}
+
+/* Estilo para la clase .media-container */
+.media-container {
+    display: grid; /* Utiliza un sistema de grid para la disposición de los elementos */
+    grid-template-columns: auto auto; /* Define dos columnas automáticas para los elementos del grid */
+    gap: 10px; /* Añade un espacio de 10px entre las celdas del grid */
+    justify-content: center; /* Centra el contenido horizontalmente dentro del grid */
+    align-items: center; /* Centra el contenido verticalmente dentro del grid */
+}
+
+/* Estilo para los contenedores de video (trailer) */
+.trailer {
+    width: 100%; /* Hace que el contenedor del video ocupe todo el ancho disponible */
+    height: 100%; /* Hace que el contenedor del video ocupe toda la altura disponible */
+    border-radius: 20px; /* Redondea las esquinas del contenedor del video */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga de los bordes del contenedor */
+}
+
+/* Estilo para el video dentro del contenedor .trailer */
+.trailer video {
+    width: 100%; /* Hace que el video ocupe todo el ancho disponible del contenedor */
+    height: 100%; /* Hace que el video ocupe toda la altura disponible del contenedor */
+    border-radius: 20px; /* Redondea las esquinas del video */
+    object-fit: cover; /* Ajusta el video para cubrir todo el contenedor sin distorsionar */
+}
+
+/* Estilo para el contenedor de la imagen del poster */
+.poster {
+    grid-column: 2; /* Coloca el contenedor de la imagen en la segunda columna del grid */
+}
+
+/* Estilo para las imágenes del poster */
+.poster img {
+    width: 300px; /* Define el ancho de la imagen del poster */
+    height: 400px; /* Define la altura de la imagen del poster */
+    border-radius: 15px; /* Redondea las esquinas de la imagen del poster */
+}
+
+/* Estilo para la clase .synopsis */
+.synopsis {
+    width: 900px; /* Define el ancho de la caja de la sinopsis */
+    margin-top: 20px; /* Aplica un margen superior de 20px */
+    padding: 20px; /* Añade un relleno de 20px en todos los lados */
+    border-radius: 10px; /* Redondea las esquinas de la caja de sinopsis */
+    margin-left: 80px; /* Aplica un margen izquierdo de 80px */
+}
+
+/* Estilo para los encabezados dentro de la sinopsis */
+.synopsis h2 {
+    margin-bottom: 10px; /* Aplica un margen inferior de 10px */
+}
+
+/* Estilo para los párrafos dentro de la sinopsis */
+.synopsis p {
+    font-size: 16px; /* Establece el tamaño de fuente de los párrafos en 16px */
+    line-height: 1.5; /* Define el interlineado para mejorar la legibilidad */
+}
+
+/* Estilo para la clase .actoresPrincipalesImagenes */
+.actoresPrincipalesImagenes {
+    display: grid; /* Utiliza un sistema de grid para la disposición de los elementos */
+    grid-template-columns: repeat(6, 1fr); /* Define 6 columnas en el grid, cada una ocupando una fracción igual del espacio */
+    grid-template-rows: repeat(2, 1fr); /* Define 2 filas en el grid, cada una ocupando una fracción igual del espacio */
+    grid-column-gap: 0; /* Establece 0px de espacio entre las columnas */
+    grid-row-gap: 0; /* Establece 0px de espacio entre las filas */
+    gap: 30px; /* Añade un espacio de 30px entre las celdas del grid */
+}
+
+/* Estilos específicos para los actores en las celdas del grid */
+.div1Actor {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+/* Coloca el actor en la primera fila, primera columna (seria lo mismo pero en diferentes posiciones para cada actor)*/
+.div2Actor {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3Actor {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.div4Actor {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.div5Actor {
+    grid-area: 1 / 5 / 2 / 6;
+}
+
+.div6Actor {
+    grid-area: 1 / 6 / 2 / 7;
+}
+
+.div7Actor {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.div8Actor {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.div9Actor {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.div10Actor {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.div11Actor {
+    grid-area: 2 / 5 / 3 / 6;
+}
+
+.div12Actor {
+    grid-area: 2 / 6 / 3 / 7;
+}
+
+/* Estilo para las imágenes de los actores principales */
+.actoresPrincipalesImagenes img {
+    max-height: 200px; /* Establece una altura máxima de 200px para las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsionarse */
+    border-radius: 50%; /* Hace que las imágenes sean circulares */
+    width: 200px; /* Establece el ancho de las imágenes a 200px */
+    height: 200px; /* Establece la altura de las imágenes a 200px */
+}
+
+/* Estilos generales para los divs de actores */
+.div1Actor, .div2Actor, .div3Actor, .div4Actor, .div5Actor, .div6Actor, .div7Actor, .div8Actor, .div9Actor, .div10Actor, .div11Actor, .div12Actor {
+    display: flex; /* Utiliza flexbox para alinear los elementos dentro de los contenedores */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+/* Estilo para la clase .descripcion */
+.descripcion {
+    display: grid; /* Utiliza un sistema de grid para la disposición de los elementos */
+    grid-template-columns: 1fr; /* Define una sola columna para los elementos */
+    grid-template-rows: repeat(3, 1fr); /* Define 3 filas, cada una ocupando una fracción igual del espacio */
+    grid-column-gap: 0; /* Establece 0px de espacio entre las columnas */
+    grid-row-gap: 0; /* Establece 0px de espacio entre las filas */
+}
+
+/* Estilos para los divs dentro de la clase .descripcion */
+.divNombre {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+/* Coloca el nombre en la primera fila */
+.divProfesion {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+/* Coloca la profesión en la segunda fila */
+.divPersonaje {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+/* Coloca el personaje en la tercera fila */
+
+/* Estilo del título de las mejores valoradas */
+.mejoresValoradasTitulo {
+    display: flex; /* Utiliza Flexbox */
+    align-items: center; /* Centra verticalmente */
+    margin-top: 75px; /* Espaciado superior */
+  }
+  
+  /* Estilo para el título del género */
+  .generoTitulo {
+    margin-top: -25px; /* Espaciado negativo para ajustar la posición */
+  }
+  
+  /* Estilo de la cuadrícula que muestra las imágenes de las mejores valoradas */
+  .mejoresValoradasImagenes {
+    display: grid; /* Utiliza una cuadrícula */
+    grid-template-columns: repeat(5, 1fr); /* Cinco columnas de igual tamaño */
+    grid-template-rows: repeat(2, 1fr); /* Dos filas de igual tamaño */
+    grid-column-gap: 0px; /* Espaciado entre columnas */
+    grid-row-gap: 0px; /* Espaciado entre filas */
+    gap: 10px; /* Espaciado general */
+  }
+  
+  .div1MejoresValoradasFoto {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex; /* Asegura que el div ajuste a su contenido */
+    align-items: center; /* Opcional: centra verticalmente el contenido */
+    justify-content: center; /* Opcional: centra horizontalmente el contenido */
+    width: 253px;
+    height: 350px; /* Ajusta dinámicamente al contenido */
+    overflow: hidden;
+  }
+  
+  .div2MejoresValoradasFoto {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex; /* Asegura que el div ajuste a su contenido */
+    align-items: center; /* Opcional: centra verticalmente el contenido */
+    justify-content: center; /* Opcional: centra horizontalmente el contenido */
+    width: 253px;
+    height: 350px; /* Ajusta dinámicamente al contenido */
+    overflow: hidden;
+  }
+  
+  .div3MejoresValoradasFoto {
+    grid-area: 1 / 3 / 2 / 4;
+    display: flex; /* Asegura que el div ajuste a su contenido */
+    align-items: center; /* Opcional: centra verticalmente el contenido */
+    justify-content: center; /* Opcional: centra horizontalmente el contenido */
+    width: 253px;
+    height: 350px; /* Ajusta dinámicamente al contenido */
+    overflow: hidden;
+  }
+  
+  .div4MejoresValoradasFoto {
+    grid-area: 1 / 4 / 2 / 5;
+    display: flex; /* Asegura que el div ajuste a su contenido */
+    align-items: center; /* Opcional: centra verticalmente el contenido */
+    justify-content: center; /* Opcional: centra horizontalmente el contenido */
+    width: 253px;
+    height: 350px; /* Ajusta dinámicamente al contenido */
+    overflow: hidden;
+    object-fit: cover;
+  }
+  
+  .div5MejoresValoradasFoto {
+    grid-area: 1 / 5 / 2 / 6;
+    display: flex; /* Asegura que el div ajuste a su contenido */
+    align-items: center; /* Opcional: centra verticalmente el contenido */
+    justify-content: center; /* Opcional: centra horizontalmente el contenido */
+    width: 253px;
+    height: 350px; /* Ajusta dinámicamente al contenido */
+    overflow: hidden;
+  }
+  
+  .div1MejoresValoradas {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: #161040;
+    max-height: 300px; /* Establece una altura máxima para las imágenes */
+    object-fit: cover;
+    width: 75%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+  }
+  
+  .div2MejoresValoradas {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: #161040;
+    max-height: 300px; /* Establece una altura máxima para las imágenes */
+    object-fit: cover;
+    width: 75%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+  }
+  
+  .div3MejoresValoradas {
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: #161040;
+    max-height: 300px; /* Establece una altura máxima para las imágenes */
+    object-fit: cover;
+    width: 75%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+  }
+  
+  .div4MejoresValoradas {
+    grid-area: 2 / 4 / 3 / 5;
+    background-color: #161040;
+    max-height: 300px; /* Establece una altura máxima para las imágenes */
+  
+    width: 75%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+  }
+  
+  .div5MejoresValoradas {
+    grid-area: 2 / 5 / 3 / 6;
+    background-color: #161040;
+    max-height: 300px; /* Establece una altura máxima para las imágenes */
+    object-fit: cover;
+    width: 75%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+  }
+  
+  .mejoresValoradasImagenes img {
+    max-height: 400px; /* Establece una altura máxima para las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsionarse */
+    border-radius: 10px; /* Opcional: redondea las esquinas de las imágenes */
+    width: 253px;
+    height: 350px;
+  }
+  
+  /* Estilo para la sección de las mejores valoradas (ratingsMejoresValoradas) */
+  .ratingsMejoresValoradas {
+    display: grid; /* Utiliza la cuadrícula CSS para organizar los elementos */
+    grid-template-columns: 1fr; /* Una sola columna de tamaño flexible */
+    grid-template-rows: repeat(3, 1fr); /* Tres filas de tamaño flexible */
+    grid-column-gap: 0px; /* Sin espacio entre columnas */
+    grid-row-gap: 0px; /* Sin espacio entre filas */
+    height: 300px; /* Altura fija */
+    width: 100%; /* Ancho completo */
+    margin-left: 10px; /* Espaciado a la izquierda */
+    object-fit: cover; /* Asegura que el contenido se cubra sin distorsionarse */
+  }
+  
+  /* Estilo para el primer contenedor de las valoraciones */
+  .div1Ratings {
+    grid-area: 1 / 1 / 2 / 2; /* Ubicación en la cuadrícula */
+    display: flex; /* Utiliza Flexbox */
+    align-items: center; /* Centra verticalmente el contenido */
+  }
+  
+  /* Estilo para el segundo contenedor de las valoraciones */
+  .div2Ratings {
+    grid-area: 2 / 1 / 3 / 2; /* Ubicación en la cuadrícula */
+    display: flex; /* Utiliza Flexbox */
+    color: white; /* Color de texto blanco */
+  }
+  
+  /* Estilo para el tercer contenedor de las valoraciones */
+  .div3Ratings {
+    grid-area: 3 / 1 / 4 / 2; /* Ubicación en la cuadrícula */
+    display: flex; /* Utiliza Flexbox */
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: left; /* Alinea horizontalmente el contenido */
+    color: white; /* Color de texto blanco */
+  }
+  
+  /* Estilo para los iconos informativos */
+  .info {
+    font-size: 25px; /* Ajusta el tamaño del icono */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+  }
+  
+  /* Estilo para los textos informativos */
+  .textoInformacion {
+    font-size: 25px; /* Ajusta el tamaño del texto */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+  }
+  
+  /* Estilo para las notas de las valoraciones con estrellas */
+  .notaEstrella {
+    font-size: 25px; /* Tamaño de la estrella */
+    color: white; /* Color blanco para las estrellas */
+    margin-left: 5px; /* Espaciado entre la estrella y el texto */
+  }
+  
+  /* Estilo para los géneros de las películas */
+  .textoGenero {
+    font-size: 20px; /* Tamaño de fuente */
+    color: white; /* Color blanco */
+  }
+  
+  /* Estilo para la cuadrícula de las valoraciones por género */
+  .ratingsMejoresValoradasGenero {
+    display: grid; /* Utiliza la cuadrícula CSS */
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: repeat(4, 1fr); /* Cuatro filas de tamaño flexible */
+    grid-column-gap: 0px; /* Sin espacio entre columnas */
+    grid-row-gap: 0px; /* Sin espacio entre filas */
+    height: 225px; /* Altura fija */
+    width: 100%; /* Ancho completo */
+    margin-left: 10px; /* Espaciado a la izquierda */
+  }
+  
+  /* Estilo para el primer contenedor de las valoraciones por género */
+  .div1RatingsGenero {
+    grid-area: 1 / 1 / 2 / 2; /* Ubicación en la cuadrícula */
+    display: flex; /* Utiliza Flexbox */
+    align-items: center; /* Centra verticalmente el contenido */
+  }
+  
+  /* Estilo para el segundo contenedor de las valoraciones por género */
+  .div2RatingsGenero {
+    grid-area: 2 / 1 / 3 / 2; /* Ubicación en la cuadrícula */
+    display: flex; /* Utiliza Flexbox */
+    color: white; /* Color de texto blanco */
+  }
+  
+  /* Estilo para el tercer contenedor de las valoraciones por género */
+  .div3RatingsGenero {
+    grid-area: 3 / 1 / 4 / 2; /* Ubicación en la cuadrícula */
+    display: flex; /* Utiliza Flexbox */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: left; /* Alinea horizontalmente el contenido */
+    color: white; /* Color de texto blanco */
+  }
+  
+  /* Estilo para el cuarto contenedor de las valoraciones por género */
+  .div4RatingsGenero {
+    grid-area: 4 / 1 / 5 / 2; /* Ubicación en la cuadrícula */
+    display: flex; /* Utiliza Flexbox */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: left; /* Alinea horizontalmente el contenido */
+    color: white; /* Color de texto blanco */
+  }
+  
+  /* Estilo para la etiqueta del video */
+  #labelVideo {
+    font-size: 35px; /* Tamaño grande para la etiqueta */
+  }
+  
+  /* Estilo para la línea vertical entre secciones */
+  .vl {
+    border-left: 4px solid #251659; /* Línea vertical de 4px */
+    height: 25px; /* Altura de la línea */
+    margin-left: 10px; /* Espaciado a la izquierda */
+  }
+  
+  /* Estilo para la línea vertical de la categoría de género */
+  .vlGenero {
+    border-left: 4px solid #251659;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 32px;
+  }
+  
+  .generoTitulo {
+    margin-top: 50px; /* Espaciado superior */
+    padding-right: 10px; /* Espaciado a la derecha */
+  }
+  
+  .contenido {
+    margin-left: 7%; /* Ajusta el valor según sea necesario */
+    margin-right: 3%; /* Ajusta el valor según sea necesario */
+  }
+  
+
+  .breadcrumb {
+    margin-left: 7%;
+    margin-right: 3%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #444;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.breadcrumb a {
+    color: #444;
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: #8F15E2; /* Color del hover inspirado en tu gradiente */
+}
+
+.breadcrumb-separator {
+    margin: 0 8px;
+    color: #aaa;
+}

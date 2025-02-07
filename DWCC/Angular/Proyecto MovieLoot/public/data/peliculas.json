@@ -1,0 +1,235 @@
+[
+  {
+    "idPelicula": 1,
+    "titulo": "El padrino",
+    "ano": 1972,
+    "descripcion": "Don Vito Corleone es el respetado jefe de una de las familias más poderosas del crimen organizado en Nueva York. Cuando el poder de la familia comienza a ser amenazado por conflictos internos y externos, su hijo menor, Michael, se ve forzado a asumir un papel en el negocio familiar, lo que lo llevará a un oscuro camino de violencia, traición y poder absoluto.",
+    "genero": "Drama, Crimen",
+    "nota": 9.2,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "../media/img/elPadrino.jpg"
+  },
+  {
+    "idPelicula": 2,
+    "titulo": "El padrino II",
+    "ano": 1974,
+    "descripcion": "Esta secuela continúa la historia de la familia Corleone mientras Michael expande su imperio. Paralelamente, se narra el ascenso de un joven Vito Corleone desde sus humildes orígenes en Sicilia hasta convertirse en el respetado padrino. Una exploración de la lealtad, la ambición y las consecuencias de las decisiones en el mundo del crimen.",
+    "genero": "Drama, Crimen",
+    "nota": 9.0,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "../media/img/elPadrino2.jpg"
+  },
+  {
+    "idPelicula": 3,
+    "titulo": "La lista de Schindler",
+    "ano": 1993,
+    "descripcion": "Oskar Schindler, un empresario alemán, utiliza su fábrica como refugio para salvar a más de mil judíos del Holocausto durante la Segunda Guerra Mundial. A medida que la brutalidad del régimen nazi se intensifica, Schindler arriesga todo para proteger a sus trabajadores y enfrentar su propia transformación moral.",
+    "genero": "Drama, Historia",
+    "nota": 9.0,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "../media/img/laListaDeSchindler.jpg"
+  },
+  {
+    "idPelicula": 4,
+    "titulo": "Full Metal Jacket",
+    "ano": 1987,
+    "descripcion": "La película sigue a un grupo de jóvenes reclutas estadounidenses desde su brutal entrenamiento militar hasta su inmersión en la despiadada realidad de la Guerra de Vietnam. Con un enfoque crudo y satírico, la historia examina los efectos psicológicos del conflicto en los soldados y la deshumanización inherente al combate.",
+    "genero": "Drama, Guerra",
+    "nota": 8.3,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "../media/img/fullMetalJacket.jpg"
+  },
+  {
+    "idPelicula": 5,
+    "titulo": "El silencio de los corderos",
+    "ano": 1991,
+    "descripcion": "Clarice Starling, una prometedora agente del FBI, debe recurrir al astuto pero peligroso Hannibal Lecter, un psiquiatra encarcelado y asesino en serie, para atrapar a otro asesino conocido como Buffalo Bill. A medida que su relación se desarrolla, Lecter manipula y desafía a Clarice, llevándola a enfrentar sus propios demonios.",
+    "genero": "Thriller, Crimen",
+    "nota": 8.6,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "../media/img/elSilencioDeLosCorderos.jpg"
+  },
+  {
+    "idPelicula": 6,
+    "titulo": "El camino",
+    "ano": 2019,
+    "descripcion": "Después de los eventos de Breaking Bad, Jesse Pinkman huye de la ley y su pasado mientras busca una oportunidad de redención. La película profundiza en su lucha por superar el trauma y encontrar la paz en un mundo lleno de peligros y recuerdos oscuros.",
+    "genero": "Drama, Crimen",
+    "nota": 7.3,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "../media/img/elCamino.jpg"
+  },
+  {
+    "idPelicula": 7,
+    "titulo": "Forrest Gump",
+    "ano": 1994,
+    "descripcion": "La vida extraordinaria de Forrest Gump, un hombre con una inteligencia limitada pero con un corazón enorme. A través de su ingenuidad y determinación, se convierte en testigo de eventos históricos y transforma las vidas de quienes lo rodean mientras busca su amor de toda la vida, Jenny.",
+    "genero": "Drama, Comedia",
+    "nota": 8.8,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "https://www.example.com/images/forrest_gump.jpg"
+  },
+  {
+    "idPelicula": 8,
+    "titulo": "Pulp Fiction",
+    "ano": 1994,
+    "descripcion": "Una serie de historias entrelazadas sigue a personajes del inframundo criminal de Los Ángeles, incluyendo un boxeador, dos asesinos a sueldo y la esposa de un jefe de la mafia. Con diálogos icónicos y giros inesperados, esta obra maestra redefine el género del crimen.",
+    "genero": "Drama, Crimen",
+    "nota": 8.9,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "https://www.example.com/images/pulp_fiction.jpg"
+  },
+  {
+    "idPelicula": 9,
+    "titulo": "Gladiator",
+    "ano": 2000,
+    "descripcion": "Máximo Décimo Meridio, un general romano traicionado y convertido en esclavo, se convierte en gladiador para buscar venganza contra el emperador que destruyó su vida. A través de su valentía y habilidad, inspira a una nación mientras busca justicia.",
+    "genero": "Acción, Drama",
+    "nota": 8.5,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "https://www.example.com/images/gladiator.jpg"
+  },
+  {
+    "idPelicula": 10,
+    "titulo": "Inception",
+    "ano": 2010,
+    "descripcion": "Dom Cobb, un experto en robar secretos a través de los sueños, recibe una tarea casi imposible: plantar una idea en la mente de un objetivo. Mientras lidera un equipo para ejecutar el plan, sus propios demonios mentales ponen en peligro la misión.",
+    "genero": "Ciencia Ficción, Thriller",
+    "nota": 8.8,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "https://www.example.com/images/inception.jpg"
+  },
+  {
+    "idPelicula": 11,
+    "titulo": "Interstellar",
+    "ano": 2014,
+    "descripcion": "En un futuro donde la Tierra está al borde de la extinción, un grupo de astronautas viaja a través de un agujero de gusano para buscar un nuevo hogar para la humanidad. Cooper, un ex piloto de la NASA, se enfrenta a decisiones emocionales y desafíos científicos que cambiarán el destino de la humanidad.",
+    "genero": "Ciencia Ficción, Aventura",
+    "nota": 8.6,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "https://www.example.com/images/interstellar.jpg"
+  },
+  {
+    "idPelicula": 12,
+    "titulo": "The Dark Knight",
+    "ano": 2008,
+    "descripcion": "Batman se enfrenta a su enemigo más formidable, el Joker, un criminal psicópata cuya anarquía amenaza con desmoronar Gotham City. Con la ayuda de su aliado, el comisario Gordon, y del fiscal Harvey Dent, Batman deberá enfrentarse a dilemas éticos y desafíos físicos para proteger la ciudad.",
+    "genero": "Acción, Crimen",
+    "nota": 9.0,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "https://www.example.com/images/dark_knight.jpg"
+  },
+  {
+    "idPelicula": 13,
+    "titulo": "El gran Lebowski",
+    "ano": 1998,
+    "descripcion": "Jeffrey Lebowski, conocido como 'El Nota', se ve envuelto en un caso de confusión de identidad que lo lleva a un enredo con criminales, un millonario, y un grupo de extraños personajes. La película es una sátira surrealista sobre la vida, el destino y la amistad.",
+    "genero": "Comedia, Crimen",
+    "nota": 8.1,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "https://www.example.com/images/gran_lebowski.jpg"
+  },
+  {
+    "idPelicula": 14,
+    "titulo": "2001: Odisea del espacio",
+    "ano": 1968,
+    "descripcion": "Un viaje épico a través del espacio y el tiempo, en el que una misión a Júpiter se ve amenazada por una inteligencia artificial llamada HAL. A medida que la misión progresa, los astronautas deben enfrentarse a la naturaleza de la vida, el universo y el destino de la humanidad.",
+    "genero": "Ciencia Ficción, Aventura",
+    "nota": 8.3,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "https://www.example.com/images/2001_odisea.jpg"
+  },
+  {
+    "idPelicula": 15,
+    "titulo": "Mad Max: Fury Road",
+    "ano": 2015,
+    "descripcion": "En un mundo postapocalíptico, Furiosa y Max se unen para escapar del tiránico Immortan Joe, liderando una rebelión en un vehículo blindado mientras son perseguidos por un ejército despiadado. Una película llena de acción y paisajes devastadores.",
+    "genero": "Acción, Ciencia Ficción",
+    "nota": 8.1,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "https://www.example.com/images/mad_max.jpg"
+  },
+  {
+    "idPelicula": 16,
+    "titulo": "Titanic",
+    "ano": 1997,
+    "descripcion": "La épica historia de amor entre Jack y Rose a bordo del Titanic, el lujoso transatlántico que sufre una trágica colisión con un iceberg. Una mezcla de romance, drama y tragedia que captura la esencia de este desastre histórico.",
+    "genero": "Drama, Romance",
+    "nota": 7.9,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "https://www.example.com/images/titanic.jpg"
+  },
+  {
+    "idPelicula": 17,
+    "titulo": "Avatar",
+    "ano": 2009,
+    "descripcion": "Jake Sully, un ex marine paralítico, es enviado a Pandora para participar en un programa de avatares. Allí, se encuentra en medio de un conflicto entre los humanos y los nativos Na'vi, y debe decidir de qué lado está su lealtad mientras se enamora de Neytiri, una guerrera Na'vi.",
+    "genero": "Ciencia Ficción, Aventura",
+    "nota": 7.8,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "https://www.example.com/images/avatar.jpg"
+  },
+  {
+    "idPelicula": 18,
+    "titulo": "Whiplash",
+    "ano": 2014,
+    "descripcion": "Andrew Neiman, un joven baterista de jazz, busca alcanzar la grandeza bajo la tutela de un profesor exigente y despiadado. La relación entre ambos pone a prueba los límites de la pasión, la perseverancia y la obsesión por la perfección.",
+    "genero": "Drama, Música",
+    "nota": 8.5,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "https://www.example.com/images/whiplash.jpg"
+  },
+  {
+    "idPelicula": 19,
+    "titulo": "Parasite",
+    "ano": 2019,
+    "descripcion": "Una familia pobre se infiltra en la vida de una familia rica haciéndose pasar por empleados cualificados. Sin embargo, la situación toma un giro oscuro cuando secretos ocultos salen a la luz, desatando un desenlace sorprendente.",
+    "genero": "Drama, Thriller",
+    "nota": 8.6,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "https://www.example.com/images/parasite.jpg"
+  },
+  {
+    "idPelicula": 20,
+    "titulo": "Coco",
+    "ano": 2017,
+    "descripcion": "Miguel, un joven con pasión por la música, viaja accidentalmente al mundo de los muertos. Allí, busca la bendición de sus antepasados mientras descubre la verdad sobre su familia y la importancia del recuerdo.",
+    "genero": "Animación, Aventura",
+    "nota": 8.4,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "https://www.example.com/images/coco.jpg"
+  },
+  {
+    "idPelicula": 21,
+    "titulo": "The Social Network",
+    "ano": 2010,
+    "descripcion": "La fascinante historia de la creación de Facebook, explorando las rivalidades, traiciones y conflictos legales que surgieron en torno a Mark Zuckerberg y sus compañeros fundadores.",
+    "genero": "Drama, Biografía",
+    "nota": 7.7,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "https://www.example.com/images/coco.jpg"
+  },
+
+  {
+    "idPelicula": 22,
+    "titulo": "Cosmos: Un Viaje Personal",
+    "ano": 1980,
+    "descripcion": "Carl Sagan presenta una serie documental que explora el universo, la ciencia y la historia de la humanidad en un intento por comprender nuestro lugar en el cosmos.",
+    "genero": "Documental, Ciencia",
+    "nota": 9.3,
+    "rutaTrailer": "../media/video/elPadrino.mp4",
+    "rutaImagen": "../media/img/cosmos.jpg"
+  },
+  
+  {
+    "idPelicula": 23,
+    "titulo": "Seven",
+    "ano": 1995,
+    "descripcion": "Dos detectives, un veterano y un novato, persiguen a un asesino en serie que utiliza los siete pecados capitales como motivo para sus crímenes.",
+    "genero": "Crimen, Drama, Thriller",
+    "nota": 8.6,
+    "rutaTrailer": "../media/video/seven.mp4",
+    "rutaImagen": "../media/img/seven.jpg"
+  }
+ 
+]
