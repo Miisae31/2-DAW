@@ -1,0 +1,8 @@
+.menu {
+    width: 400px;
+    height: 100%;
+    background-color: darkviolet;
+    top: 0;
+    right: 0;
+    position: fixed;
+}
