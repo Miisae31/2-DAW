@@ -1,0 +1,16 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+package-lock.json
+yarn-error.log
+
+# Angular builds
+dist/
+out-tsc/
+
+# Environment settings
+src/environments/environment*.ts
+
+# IDE settings
+.vscode/
+.idea/
