@@ -1,0 +1,32 @@
+<div class="container is-centered mt-5">
+    <div class="box" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-width: 600px; margin: 0 auto;">
+      <h1 class="title has-text-centered">Lista de Tarefas</h1>
+  
+      <!-- Mini-formulario para crear novas tarefas -->
+      <div class="field has-addons">
+        <div class="control is-expanded">
+          <input
+            class="input"
+            type="text"
+            placeholder="Escribe unha nova tarefa..."
+            [(ngModel)]="texto"
+          />
+        </div>
+        <div class="control">
+          <button class="button is-primary" (click)="engadir()">Engadir</button>
+        </div>
+      </div>
+  
+      <!-- Lista de tarefas -->
+      <ul class="list mt-5">
+        <li class="list-item" *ngFor="let tarefa of tarefas" [@entradaSaida] [@realzada]="tarefa.completada ? 'completada' : 'pendente'">
+          <div class="box">
+            <span (click)="completar(tarefa)" [class.has-text-success]="tarefa.completada" [class.has-text-grey-light]="tarefa.completada">
+              {{ tarefa.texto }}
+            </span>
+            <button class="delete is-pulled-right" (click)="eliminar(tarefa)"></button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
