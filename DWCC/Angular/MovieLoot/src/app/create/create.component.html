@@ -1,0 +1,57 @@
+<app-header></app-header>
+
+<div class="container">
+  <h1 class="title">Creacion Usuario</h1>
+</div>
+
+<div class="container">
+  <form [formGroup]="formularioCreate" (ngSubmit)="registrar($event)">
+    <div class="field">
+      <label for="" class="label">Correo Electronico</label>
+      <div class="control has-icons-left">
+        <input
+          type="text"
+          class="input mb-2"
+          formControlName="emailUsuario"
+          [class.is-success]="emailUsuarioValido"
+          [class.is-danger]="emailUsuarioInvalido"
+        />
+        <!-- Si el usuario aún no ha introducido nada -->
+        <span *ngIf="!emailUsuarioValido && !emailUsuarioInvalido" class="icon is-small is-left">
+          <i class="fa-solid fa-envelope" data-fa-i2svg="false"></i>
+        </span>
+        <!-- Si el email es válido -->
+        <span *ngIf="emailUsuarioValido" class="icon is-small is-left">
+          <i class="fa-solid fa-check" data-fa-i2svg="false"></i>
+        </span>
+        <!-- Si el email es inválido -->
+        <span *ngIf="emailUsuarioInvalido" class="icon is-small is-left">
+          <i class="fa-solid fa-ban" data-fa-i2svg="false"></i>
+        </span>
+      </div>
+    </div>
+    
+    <div class="field">
+      <label for="" class="label">Contraseña</label>
+      <div class="control has-icons-left">
+        <input
+          type="password"
+          class="input mb-2"
+          formControlName="contrasenhaUsuario"
+          [class.is-success]="contrasenhaUsuarioValida"
+          [class.is-danger]="contrasenhaUsuarioInvalida"
+        />
+        <span *ngIf="!contrasenhaUsuarioValida && !contrasenhaUsuarioInvalida" class="icon is-small is-left">
+          <i class="fa-solid fa-lock" data-fa-i2svg="false"></i>
+        </span>
+      </div>
+    </div>
+
+    <!-- BOTON REGISTRO -->
+    <button class="button is-purple mb-2" type="submit">Crear Cuenta</button>
+  </form>
+</div>
+
+<!-- Futuro uso? 
+ <app-footer></app-footer>
+ -->

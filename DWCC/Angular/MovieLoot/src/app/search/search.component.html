@@ -1,0 +1,20 @@
+<div class="div2">
+    <!-- Div con el buscador -->
+    <label for="buscador">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </label>
+    <!-- Input de tipo search -->
+    <input 
+        id="buscador" 
+        type="search" 
+        placeholder="Buscar películas..." 
+        (input)="actualizarListaxe($event)" 
+    />
+    <ul id="suxerencias" *ngIf="sugerencias.length > 0">
+        <li *ngFor="let sugerencia of sugerencias">
+          <a href="media-view" (click)="cambiarTitulo(sugerencia._titulo)">
+            {{ datosSugerencia(sugerencia) }}
+          </a>
+        </li>
+      </ul>
+</div>

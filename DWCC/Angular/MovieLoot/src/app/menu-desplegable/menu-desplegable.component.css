@@ -1,0 +1,82 @@
+/* Estilo para el menú desplegable */
+.menuDesplegableCSS {
+    position: fixed; /* Fijo en la pantalla */
+    top: 0; /* En la parte superior */
+    right: 0; /* En el lado derecho */
+    width: 300px; /* Ancho de 300px */
+    height: 100vh; /* Altura completa */
+    background: linear-gradient(to bottom, #8F15E2, #251659, #161040, #010A26); /* Degradado en el fondo */
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Centrado del texto */
+    transform: translateX(100%); /* Inicialmente oculto a la derecha */
+    transition: transform 0.5s ease-in-out; /* Animación al abrir/cerrar */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    opacity: 1; /* Totalmente visible */
+}
+
+/* Estilo para la lista dentro del menú desplegable */
+.menuDesplegableCSS ul {
+    list-style-type: none; /* Elimina los puntos de lista */
+    padding: 0; /* Elimina el padding */
+    margin: 0; /* Elimina el margen */
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste para centrado perfecto */
+}
+
+/* Estilo de los elementos de la lista dentro del menú */
+.menuDesplegableCSS ul li {
+    padding: 20px 0; /* Espaciado entre los elementos de la lista */
+}
+
+/* Estilo de los enlaces dentro del menú */
+.menuDesplegableCSS ul li a {
+    color: white; /* Color de texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; /* Tamaño de la fuente */
+}
+
+/* Estilo de los enlaces al pasar el ratón */
+.menuDesplegableCSS ul li a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+/* Clase para mostrar el menú */
+.menuDesplegableCSS.show {
+    transform: translateX(0); /* Muestra el menú moviéndolo a la vista */
+}
+
+/* Estilo para el icono de la hamburguesa */
+.divHamburguesa i {
+    cursor: pointer; /* Cambia el cursor al hacer clic */
+    transition: transform 0.3s ease; /* Animación para el cambio */
+}
+
+/* Estilo para el icono de la hamburguesa cuando está activo */
+.divHamburguesa i.active {
+    transform: rotate(90deg); /* Rota el icono al abrir */
+}
+
+.div3 {
+    display: flex;
+}
+
+
+.divUsuario {
+    padding-right: 30px;
+}
+
+#usuarioIcono {
+    font-size: 25px;
+    color: white;
+}
+
+.divHamburguesa {
+    padding-right: 20px;
+}
+
+
+#hamburguesaIcono {
+    font-size: 30px;
+}

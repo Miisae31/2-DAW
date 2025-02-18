@@ -1,0 +1,209 @@
+<app-header></app-header>
+<app-actores (actoresEnviados)="recibirActores($event)"></app-actores>
+<nav class="breadcrumb">
+  <a href="inicio">Inicio</a> &gt; <a href="#">Películas</a> &gt;
+  <span>Detalle de Película</span>
+</nav>
+
+<div class="paginaEntera">
+  <div class="content">
+    <h1 class="movie-title">
+      <span id="tituloPelicula">{{
+        peliculaSeleccionada?.titulo || serieSeleccionada?.titulo
+      }}</span>
+      <span id="anioPelicula" class="movie-year"
+        >({{ peliculaSeleccionada?.ano || serieSeleccionada?.ano }})</span
+      >
+    </h1>
+    <div class="media-container">
+      <div class="trailer">
+        <video id="video" controls style="width: 700px; height: 450px">
+          <source
+            [src]="
+              peliculaSeleccionada?.rutaTrailer ||
+              serieSeleccionada?.rutaTrailer
+            "
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="poster">
+        <img
+          id="poster"
+          [src]="
+            peliculaSeleccionada?.rutaImagen ||
+            serieSeleccionada?.rutaImagen
+          "
+          alt="Portada de {{
+            peliculaSeleccionada?.titulo || serieSeleccionada?.titulo
+          }}"
+        />
+      </div>
+    </div>
+    <div class="synopsis">
+      <h2>Sinopsis</h2>
+      <p id="descripcion">
+        {{
+          peliculaSeleccionada?.descripcion || serieSeleccionada?.descripcion
+        }}
+      </p>
+      <h2>Géneros:</h2>
+      <p id="generos">
+        {{ peliculaSeleccionada?.genero || serieSeleccionada?.genero }}
+      </p>
+    </div>
+  </div>
+
+  <div class="mejoresValoradasTitulo">
+    <h2>Reparto principal</h2>
+    <div class="vl"></div>
+  </div>
+
+  <div class="actoresPrincipalesImagenes">
+    <!-- Aqui hacemos un ngFor que recorre los actores y hacemos un slice que los limite a un maximo de 5 actores, y para sacar 
+    los div correctamente hacemos una declaracion de un indice -->
+    <div
+      *ngFor="let actor of actoresFilm | slice : 0 : 6; let i = index"
+      [ngClass]="'div' + (i + 1) + 'Actor'"
+    >
+      <img [src]="actor.RutaFotoActor" alt="" />
+    </div>
+    <!-- Aqui hacemos un ngFor que recorre los actores y hacemos un slice que los limite a un maximo de 5 actores, y para sacar 
+    los div correctamente hacemos una declaracion de un indice -->
+    <div
+      *ngFor="let actor of actoresFilm | slice : 0 : 6; let i = index"
+      [ngClass]="'div' + (i + 7) + 'Actor'"
+    >
+      <div class="descripcion">
+        <div class="divNombre">
+          <h2>{{ actor.Nombre }} {{ actor.Apellidos }}</h2> <!-- Aqui mostramos el nombre y apellidos del actor -->
+        </div>
+        <div class="divProfesion">
+          <p>{{ actor.Profesion }}</p> <!-- Aqui mostramos la profesion del actor -->
+        </div>
+        <div class="divPersonaje">
+          <span>Fecha de Nacimiento: <p>{{ actor.FechaNacimiento }}</p></span> <!-- Aqui mostramos la fecha de nacimiento del actor -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mejoresValoradasTitulo">
+    <h2>Películas Relacionadas</h2>
+    <div class="vl"></div>
+  </div>
+
+  <div class="mejoresValoradasImagenes">
+    <div class="div1MejoresValoradasFoto">
+      <a href="pelicula.html">
+        <img src="/media/img/betterCallSaul.jpg" alt="" />
+      </a>
+    </div>
+
+    <div class="div2MejoresValoradasFoto">
+      <a href="pelicula.html">
+        <img src="/media/img/elCamino.jpg" alt="" />
+      </a>
+    </div>
+
+    <div class="div3MejoresValoradasFoto">
+      <a href="pelicula.html">
+        <img src="/media/img/ozark.jpg" alt="" />
+      </a>
+    </div>
+
+    <div class="div4MejoresValoradasFoto">
+      <a href="pelicula.html">
+        <img src="/media/img/narcos.jpg" alt="" />
+      </a>
+    </div>
+
+    <div class="div5MejoresValoradasFoto">
+      <a href="pelicula.html">
+        <img src="/media/img/fariña.jpg" alt="" />
+      </a>
+    </div>
+
+    <div class="div1MejoresValoradas">
+      <div class="ratingsMejoresValoradas">
+        <div class="div1Ratings">
+          <i class="fa-solid fa-star" style="color: #b197fc"></i>
+          <p class="notaEstrella">9.0</p>
+        </div>
+        <div class="div2Ratings">
+          <h3>Better Call Saul (2015)</h3>
+        </div>
+        <div class="div3Ratings">
+          <i class="fa-solid fa-circle-info info" style="color: #b197fc"></i>
+          <span class="textoInformacion">Más información</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="div2MejoresValoradas">
+      <div class="ratingsMejoresValoradas">
+        <div class="div1Ratings">
+          <i class="fa-solid fa-star" style="color: #b197fc"></i>
+          <p class="notaEstrella">7</p>
+        </div>
+        <div class="div2Ratings">
+          <h3>El Camino (2019)</h3>
+        </div>
+        <div class="div3Ratings">
+          <i class="fa-solid fa-circle-info info" style="color: #b197fc"></i>
+          <span class="textoInformacion">Más información</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="div3MejoresValoradas">
+      <div class="ratingsMejoresValoradas">
+        <div class="div1Ratings">
+          <i class="fa-solid fa-star" style="color: #b197fc"></i>
+          <p class="notaEstrella">7.5</p>
+        </div>
+        <div class="div2Ratings">
+          <h3>Ozark (2017)</h3>
+        </div>
+        <div class="div3Ratings">
+          <i class="fa-solid fa-circle-info info" style="color: #b197fc"></i>
+          <span class="textoInformacion">Más información</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="div4MejoresValoradas">
+      <div class="ratingsMejoresValoradas">
+        <div class="div1Ratings">
+          <i class="fa-solid fa-star" style="color: #b197fc"></i>
+          <p class="notaEstrella">8.5</p>
+        </div>
+        <div class="div2Ratings">
+          <h3>Narcos (2015)</h3>
+        </div>
+        <div class="div3Ratings">
+          <i class="fa-solid fa-circle-info info" style="color: #b197fc"></i>
+          <span class="textoInformacion">Más información</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="div5MejoresValoradas">
+      <div class="ratingsMejoresValoradas">
+        <div class="div1Ratings">
+          <i class="fa-solid fa-star" style="color: #b197fc"></i>
+          <p class="notaEstrella">8.9</p>
+        </div>
+        <div class="div2Ratings">
+          <h3>Fariña (2018)</h3>
+        </div>
+        <div class="div3Ratings">
+          <i class="fa-solid fa-circle-info info" style="color: #b197fc"></i>
+          <span class="textoInformacion">Más información</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
