@@ -7,7 +7,7 @@
 
 <div class="paginaEntera">
   <div class="content">
-    <h1 class="movie-title">
+    <h1 class="movie-title tituloblanco">
       <span id="tituloPelicula">{{
         peliculaSeleccionada?.titulo || serieSeleccionada?.titulo
       }}</span>
@@ -41,13 +41,13 @@
       </div>
     </div>
     <div class="synopsis">
-      <h2>Sinopsis</h2>
+      <h2 class="tituloblanco">Sinopsis</h2>
       <p id="descripcion">
         {{
           peliculaSeleccionada?.descripcion || serieSeleccionada?.descripcion
         }}
       </p>
-      <h2>Géneros:</h2>
+      <h2 class="tituloblanco">Géneros:</h2>
       <p id="generos">
         {{ peliculaSeleccionada?.genero || serieSeleccionada?.genero }}
       </p>
@@ -55,7 +55,7 @@
   </div>
 
   <div class="mejoresValoradasTitulo">
-    <h2>Reparto principal</h2>
+    <h2 class="title">Reparto principal</h2>
     <div class="vl"></div>
   </div>
 
@@ -89,7 +89,7 @@
   </div>
 
   <div class="mejoresValoradasTitulo">
-    <h2>Películas Relacionadas</h2>
+    <h2 class="title">Películas Relacionadas</h2>
     <div class="vl"></div>
   </div>
 
