@@ -47,6 +47,38 @@
       </div>
     </div>
 
+    <!-- Select de rol-->
+    <div class="field">
+      <label class="label mb-2" for="rol">Rol</label>
+      <div class="control has-icons-left has-icons-right">
+        <div class="select is-rounded is-medium is-fullwidth">
+          <select
+            formControlName="rol"
+            [class.is-success]="rolValido"
+            [class.is-danger]="rolInvalido"
+          >
+            <option value="1">Administrador</option>
+            <option value="2">Usuario</option>
+          </select>
+          <span *ngIf="!rolValido && !rolInvalido" class="icon is-small is-left">
+            <i class="fa-solid fa-user" data-fa-i2svg="false"></i>
+          </span>
+          <!-- Icono de check (válido) -->
+          <span *ngIf="rolValido" class="icon is-small is-left">
+            <i class="fa-solid fa-check" data-fa-i2svg="false"></i>
+          </span>
+          <!-- Icono de ban (inválido) -->
+          <span *ngIf="rolInvalido" class="icon is-small is-left">
+            <i class="fa-solid fa-ban" data-fa-i2svg="false"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    
+
+    
+
     <!-- BOTON REGISTRO -->
     <button class="button is-purple mb-2" type="submit">Crear Cuenta</button>
   </form>
