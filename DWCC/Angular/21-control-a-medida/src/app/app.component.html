@@ -1,0 +1,11 @@
+<form  [formGroup]="formulario" (ngSubmit)="gardar()">
+    <label class="label" for="artigo">Artigo</label>
+    <input class="input" type="text" formControlName="artigo">
+    <label class="label" for="descricion">Descrición</label>
+    <input class="input" type="text" formControlName="descricion">
+    <label class="input" class="label" for="cantidade">Cantidade</label>
+    <app-pasoapaso formControlName="cantidade"></app-pasoapaso>
+    <button class="button" type="submit">
+        GARDAR
+    </button>
+</form>
