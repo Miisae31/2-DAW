@@ -7,25 +7,25 @@
 <div class="container">
   <form [formGroup]="formularioCreate" (ngSubmit)="registrar($event)">
     <div class="field">
-      <label for="" class="label">Correo Electronico</label>
+      <label for="" class="label">Username</label>
       <div class="control has-icons-left">
         <input
           type="text"
           class="input mb-2"
-          formControlName="emailUsuario"
-          [class.is-success]="emailUsuarioValido"
-          [class.is-danger]="emailUsuarioInvalido"
+          formControlName="username"
+          [class.is-success]="usernameValido"
+          [class.is-danger]="usernameInvalido"
         />
         <!-- Si el usuario aún no ha introducido nada -->
-        <span *ngIf="!emailUsuarioValido && !emailUsuarioInvalido" class="icon is-small is-left">
-          <i class="fa-solid fa-envelope" data-fa-i2svg="false"></i>
+        <span *ngIf="!usernameValido && !usernameInvalido" class="icon is-small is-left">
+          <i class="fa-solid fa-user" data-fa-i2svg="false"></i>
         </span>
-        <!-- Si el email es válido -->
-        <span *ngIf="emailUsuarioValido" class="icon is-small is-left">
+        <!-- Si el username es válido -->
+        <span *ngIf="usernameValido" class="icon is-small is-left">
           <i class="fa-solid fa-check" data-fa-i2svg="false"></i>
         </span>
-        <!-- Si el email es inválido -->
-        <span *ngIf="emailUsuarioInvalido" class="icon is-small is-left">
+        <!-- Si el username es inválido -->
+        <span *ngIf="usernameInvalido" class="icon is-small is-left">
           <i class="fa-solid fa-ban" data-fa-i2svg="false"></i>
         </span>
       </div>
@@ -80,7 +80,7 @@
     
 
     <!-- BOTON REGISTRO -->
-    <button class="button is-purple mb-2" type="submit">Crear Cuenta</button>
+    <button (click)="redirect()" class="button is-purple mb-2" type="submit">Crear Cuenta</button>
   </form>
 </div>
 

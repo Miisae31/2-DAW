@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ThumbnailsService } from '../thumbnails.service';
+import { ThumbnailsService } from '../services/thumbnails.service';
 import { HeaderComponent } from "../header/header.component";
 import { FooterComponent } from "../footer/footer.component";
 import * as peliculasDatos from '../../../public/data/peliculas.json'; 

@@ -7,7 +7,7 @@ body {
     display: flex; /* Utiliza Flexbox para organizar los elementos dentro del contenedor */
     justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center; /* Centra los elementos verticalmente */
-    height: 100vh; /* El contenedor tiene una altura igual al 100% de la ventana del navegador */
+    height: 90vh; /* El contenedor tiene una altura igual al 100% de la ventana del navegador */
 }
 
 .paginaLogin{
@@ -97,7 +97,6 @@ button {
     border: 0; /* Elimina el borde del botón */
     border-radius: 4px; /* Bordes ligeramente redondeados */
     font-weight: 600; /* Define un peso de fuente más grueso para el texto del botón */
-    margin: 0 10px; /* Añade un margen horizontal entre los botones */
     width: 200px; /* Define un ancho fijo para los botones */
     padding: 10px 0; /* Añade espacio interno en el botón */
     box-shadow: 0 0 20px rgba(104, 85, 224, 0.2); /* Añade una sombra suave */

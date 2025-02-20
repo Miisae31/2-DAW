@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { ThumbnailsService } from '../thumbnails.service';
+import { ThumbnailsService } from '../services/thumbnails.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contenido-inicial',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './contenido-inicial.component.html',
   styleUrl: './contenido-inicial.component.css'
 })

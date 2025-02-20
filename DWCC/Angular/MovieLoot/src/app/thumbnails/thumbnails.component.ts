@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ThumbnailsService } from '../thumbnails.service';
+import { ThumbnailsService } from '../services/thumbnails.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 @Component({

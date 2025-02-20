@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import * as peliculasDatos from '../../../public/data/peliculas.json'; // Importar el JSON
 import * as seriesDatos from '../../../public/data/series.json';
-import { Peliculaclase } from '../peliculaclase';
+import { Peliculaclase } from '../models/peliculaclase';
 import { CommonModule } from '@angular/common';
-import { Serieclase } from '../serieclase';
-import { ThumbnailsService } from '../thumbnails.service';
+import { Serieclase } from '../models/serieclase';
+import { ThumbnailsService } from '../services/thumbnails.service';
 
 @Component({
   selector: 'app-search',

@@ -2,15 +2,13 @@ import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import {
   FormBuilder,
-  FormControl,
   FormGroup,
   ReactiveFormsModule,
   Validators,
 } from "@angular/forms";
-import { debounceTime } from "rxjs";
 import { HeaderComponent } from "../header/header.component";
-import { FooterComponent } from "../footer/footer.component";
-import { ServizoLoginService } from "../servizo-login.service";
+import { ServizoLoginService } from "../services/servizo-login.service";
+import { Router } from "@angular/router";
 @Component({
   selector: "app-create",
   standalone: true,
@@ -21,15 +19,17 @@ import { ServizoLoginService } from "../servizo-login.service";
 export class CreateComponent {
   formularioCreate: FormGroup;
   usuarios: any[];
-  constructor(private elaborador: FormBuilder, private servicio: ServizoLoginService) {
+  constructor(
+    private elaborador: FormBuilder,
+    private servicio: ServizoLoginService,
+    private router: Router
+  ) {
     this.formularioCreate = this.elaborador.group({
       // Cada control do formulario defínese mediante  un array, no que o primeiro elemento corresponde ao valor por defecto do campo, e o segundo elemento corresponde a un array con todos os validadores qeu se aplican ao campo
-      emailUsuario: ["", [Validators.required]],
+      username: ["", [Validators.required]],
       contrasenhaUsuario: ["", [Validators.required]],
       rol: ["", [Validators.required]],
     });
-
-  
   }
 
   registrar(evento: Event) {
@@ -46,13 +46,19 @@ export class CreateComponent {
   ngOnInit(): void {
     this.servicio.subcribirse$().subscribe((usuarios) => {
       this.usuarios = usuarios;
-    })
+    });
+  }
+
+  redirect() {
+    if(this.formularioCreate.valid) {
+      this.router.navigate(["/inicio"]);
+    }
   }
 
   // GETTERS (para facilitar o traballo cos campos de formulario)
 
-  get emailUsuario() {
-    return this.formularioCreate.get("emailUsuario");
+  get username() {
+    return this.formularioCreate.get("username");
   }
 
   get contrasenha() {
@@ -63,12 +69,12 @@ export class CreateComponent {
     return this.formularioCreate.get("rol");
   }
 
-  get emailUsuarioValido(): boolean {
-    return (this.emailUsuario?.valid && this.emailUsuario?.touched) || false;
+  get usernameValido(): boolean {
+    return (this.username?.valid && this.username?.touched) || false;
   }
 
-  get emailUsuarioInvalido(): boolean {
-    return (this.emailUsuario?.invalid && this.emailUsuario?.touched) || false;
+  get usernameInvalido(): boolean {
+    return (this.username?.invalid && this.username?.touched) || false;
   }
 
   get contrasenhaUsuarioValida(): boolean {

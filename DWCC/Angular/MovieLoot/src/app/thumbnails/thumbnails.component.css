@@ -124,7 +124,7 @@
 .mejoresValoradasImagenes img {
   max-height: 400px; /* Establece una altura máxima para las imágenes */
   object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsionarse */
-  border-radius: 10px; /* Opcional: redondea las esquinas de las imágenes */
+  border-radius: 15px; /* Opcional: redondea las esquinas de las imágenes */
   width: 253px;
   height: 350px;
 }
@@ -147,6 +147,11 @@
   grid-area: 1 / 1 / 2 / 2; /* Ubicación en la cuadrícula */
   display: flex; /* Utiliza Flexbox */
   align-items: center; /* Centra verticalmente el contenido */
+  width: 246pt;
+}
+
+.genero {
+  font-size: 15px;
 }
 
 /* Estilo para el segundo contenedor de las valoraciones */
@@ -188,6 +193,11 @@
 .textoGenero {
   font-size: 20px; /* Tamaño de fuente */
   color: white; /* Color blanco */
+}
+
+.pelicula {
+  border-radius: 25px;
+ 
 }
 
 /* Estilo para la cuadrícula de las valoraciones por género */
@@ -242,14 +252,15 @@
 /* Estilo para la línea vertical entre secciones */
 .vl {
   border-left: 4px solid #251659; /* Línea vertical de 4px */
-  height: 25px; /* Altura de la línea */
+  height: 30px; /* Altura de la línea */
   margin-left: 10px; /* Espaciado a la izquierda */
+  margin-bottom: 20px;
 }
 
 /* Estilo para la línea vertical de la categoría de género */
 .vlGenero {
   border-left: 4px solid #251659;
-  height: 25px;
+  height: 30px;
   margin-left: 10px;
   margin-top: 32px;
 }

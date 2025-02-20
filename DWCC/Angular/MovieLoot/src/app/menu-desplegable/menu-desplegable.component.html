@@ -1,10 +1,19 @@
 <div class="div3">
     <!-- Div con los iconos de usuario y hamburguesa -->
-    <div class="divUsuario">
-        <a href="login">
-            <i class="fa-solid fa-user" id="usuarioIcono"></i>
-        </a>
-    </div>
+     <ng-container *ngIf="!isLogged()">
+        <div class="divUsuario mt-1">
+            <a routerLink='/login' routerLinkActive="active">
+                <i class="fa-solid fa-user" id="usuarioIcono"></i>
+            </a>
+        </div>
+     </ng-container>
+     <ng-container *ngIf="isLogged()">
+        <div class="divUsuario mt-1">
+            <a (click)="logout()" routerLink='/login' routerLinkActive="active">
+                <i class="fa-solid fa-sign-out" id="usuarioIcono"></i>
+            </a>
+        </div>
+     </ng-container>
     <div class="divHamburguesa">
         <!-- Ícono de hamburguesa con evento click -->
         <i class="fa-solid fa-bars" id="hamburguesaIcono" (click)="toggleMenu()" [ngClass]="{'active': isMenuVisible}"></i>
@@ -13,11 +22,13 @@
     <nav id="menuDesplegable" class="menuDesplegableCSS" [ngClass]="{'show': isMenuVisible, 'active': isMenuVisible}" (mouseleave)="closeMenu()">
         <!-- Menú desplegable -->
         <ul>
-            <li><a href="inicio">Inicio</a></li>
-            <li><a href="#">Series y Peliculas</a></li>
-            <li><a href="#">Foros</a></li>
-            <li><a href="#">Plan Premium</a></li>
-            <li><a href="#">Contactanos</a></li>
+            <li><a routerLink="/inicio">Inicio</a></li>
+            <li><a routerLink="/inicio">Series y Peliculas</a></li>
+            <li><a routerLink="/inicio">Foros</a></li>
+            <ng-container *ngIf="isAdmin()">
+                <li><a routerLink="/adminUsuarios">Gestion Usuarios</a></li>
+            </ng-container>
+            <li *ngIf="isLogged()"><a (click)="logout()" routerLink="/login">Cerrar Sesión</a></li>
         </ul>
     </nav>
 </div>
