@@ -9,10 +9,12 @@ import {
 import { HeaderComponent } from "../header/header.component";
 import { ServizoLoginService } from "../services/servizo-login.service";
 import { Router } from "@angular/router";
+import { RouterModule } from '@angular/router';
+
 @Component({
   selector: "app-create",
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, HeaderComponent],
+  imports: [ReactiveFormsModule, CommonModule, HeaderComponent, RouterModule],
   templateUrl: "./create.component.html",
   styleUrl: "./create.component.css",
 })
@@ -27,7 +29,7 @@ export class CreateComponent {
     this.formularioCreate = this.elaborador.group({
       // Cada control do formulario defínese mediante  un array, no que o primeiro elemento corresponde ao valor por defecto do campo, e o segundo elemento corresponde a un array con todos os validadores qeu se aplican ao campo
       username: ["", [Validators.required]],
-      contrasenhaUsuario: ["", [Validators.required]],
+      contrasenha: ["", [Validators.required]],
       rol: ["", [Validators.required]],
     });
   }
@@ -37,6 +39,7 @@ export class CreateComponent {
 
     if (this.formularioCreate.valid) {
       this.servicio.añadirUsuario(this.formularioCreate.value);
+      this.router.navigate(['/manage-users']); // Redirige después de añadir el usuario
     } else {
       this.formularioCreate.markAllAsTouched();
     }
@@ -48,11 +51,11 @@ export class CreateComponent {
     });
   }
 
-  redirect() {
-    if(this.formularioCreate.valid) {
-      this.router.navigate(["/inicio"]);
-    }
+  isAdmin() {
+    return this.servicio.isAdmin();
   }
+
+ 
 
   // GETTERS (para facilitar o traballo cos campos de formulario)
 

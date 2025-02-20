@@ -9,11 +9,13 @@ import { ServizoLoginService } from "../services/servizo-login.service";
 import { Router, ActivatedRoute } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { HeaderComponent } from "../header/header.component";
+import { RouterModule } from '@angular/router';
+
 
 @Component({
   selector: "app-edit-users",
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, HeaderComponent],
+  imports: [CommonModule, ReactiveFormsModule, HeaderComponent, RouterModule],
   templateUrl: "./edit-users.component.html",
   styleUrl: "./edit-users.component.css",
 })
@@ -39,12 +41,13 @@ export class EditUsersComponent {
 
 
   
-  registrar(evento: Event) {
+  editar(evento: Event) {
     evento.preventDefault();
     if (this.formularioCreate.valid) {
       const usuarioModificado = this.formularioCreate.value;
+      console.log(usuarioModificado);
       this.servicio.editUser(this.indice, usuarioModificado); // Llamada al servicio para editar
-      this.redirect(); // Redirigir después de editar
+      this.router.navigate(['/manage-users']); // Redirige después de editar el usuario
     } else {
       this.formularioCreate.markAllAsTouched();
     }
@@ -70,11 +73,7 @@ export class EditUsersComponent {
     
   }
 
-  redirect() {
-    if (this.formularioCreate.valid) {
-      this.router.navigate(["/manage-users"]);
-    }
-  }
+
 
   // GETTERS (para facilitar o traballo cos campos de formulario)
 

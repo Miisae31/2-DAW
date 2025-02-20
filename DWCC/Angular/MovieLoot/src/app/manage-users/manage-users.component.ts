@@ -2,12 +2,12 @@ import { Component } from "@angular/core";
 import { HeaderComponent } from "../header/header.component";
 import { CommonModule } from "@angular/common";
 import { ServizoLoginService } from "../services/servizo-login.service";
-import { Router } from "@angular/router";
+import { Router, RouterModule } from "@angular/router";
 
 @Component({
   selector: "app-manage-users",
   standalone: true,
-  imports: [HeaderComponent, CommonModule],
+  imports: [HeaderComponent, CommonModule, RouterModule],
   templateUrl: "./manage-users.component.html",
   styleUrl: "./manage-users.component.css",
 })

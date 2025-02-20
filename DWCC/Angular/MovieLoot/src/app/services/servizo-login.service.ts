@@ -47,10 +47,15 @@ export class ServizoLoginService {
   añadirUsuario(usuario: any) {
     usuario.rol = "usuario";
     this.usuarios.push(usuario);
+    this.actualizarUsuarios();
+    
+  }
+
+  private actualizarUsuarios() {
     this.usuarios$.next(this.usuarios);
     if(isPlatformBrowser(this.platformId)) {
-    localStorage.setItem("usuarios", JSON.stringify(this.usuarios));
-    }
+      localStorage.setItem("usuarios", JSON.stringify(this.usuarios));
+      }
   }
 
   loginUsuario(username: string, contrasenha: string): boolean {
@@ -109,30 +114,16 @@ export class ServizoLoginService {
 
   destroyUser(indice: number) {
     this.usuarios.splice(indice, 1); // Eliminar el usuario en el índice especificado
-    this.usuarios$.next(this.usuarios); // Emitir cambios
-  
-    if (isPlatformBrowser(this.platformId)) {
-      // Si estamos en el navegador, actualizar el localStorage
-      localStorage.setItem("usuarios", JSON.stringify(this.usuarios));
-    }
+    this.actualizarUsuarios(); 
   }
 
   editUser(indice: number, usuarioEditado: any) {
-    console.log("Índice recibido:", indice);
-    console.log("Usuario antes de la edición:", this.usuarios[indice]);
-    console.log("Datos nuevos recibidos:", usuarioEditado);
+
   
     // Modificar el usuario en el índice especificado
     this.usuarios[indice] = { ...this.usuarios[indice], ...usuarioEditado };
-    console.log("Usuario después de la edición:", this.usuarios[indice]);
   
-    // Emitir cambios
-    this.usuarios$.next(this.usuarios);
-    console.log("Usuarios actualizados:", this.usuarios);
-  
-    // Guardar los cambios en el localStorage
-    localStorage.setItem("usuarios", JSON.stringify(this.usuarios));
-    console.log("LocalStorage actualizado:", localStorage.getItem("usuarios"));
+    this.actualizarUsuarios(); // Emitir cambios
   }
   
 }

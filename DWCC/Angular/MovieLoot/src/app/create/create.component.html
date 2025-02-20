@@ -37,7 +37,7 @@
         <input
           type="password"
           class="input mb-2"
-          formControlName="contrasenhaUsuario"
+          formControlName="contrasenha"
           [class.is-success]="contrasenhaUsuarioValida"
           [class.is-danger]="contrasenhaUsuarioInvalida"
         />
@@ -57,7 +57,7 @@
             [class.is-success]="rolValido"
             [class.is-danger]="rolInvalido"
           >
-            <option value="administrador">Administrador</option>
+            <option *ngIf="isAdmin()" value="administrador">Administrador</option>
             <option value="usuario">Usuario</option>
           </select>
           <span *ngIf="!rolValido && !rolInvalido" class="icon is-small is-left">
@@ -74,13 +74,8 @@
         </div>
       </div>
     </div>
-
-    
-
-    
-
     <!-- BOTON REGISTRO --> 
-    <button (click)="redirect()" class="button is-purple mb-2" type="submit">Crear Cuenta</button>
+    <button  class="button is-purple mb-2" type="submit">Crear Cuenta</button>
   </form>
 </div>
 

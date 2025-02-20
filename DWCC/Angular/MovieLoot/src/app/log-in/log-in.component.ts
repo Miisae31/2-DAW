@@ -53,5 +53,11 @@ export class LogInComponent {
   isLogged() {
     return this.servicio.isLogged();
   }
+
+  ngOnInit() {
+    this.servicio.subcribirse$().subscribe((usuarios) => {
+      console.log("Usuarios actualizados", usuarios);
+    })
+  }
   
 }

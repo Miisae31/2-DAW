@@ -5,7 +5,7 @@
 </div>
 
 <div class="container">
-  <form [formGroup]="formularioCreate" (ngSubmit)="registrar($event)">
+  <form [formGroup]="formularioCreate" (ngSubmit)="editar($event)">
     <div class="field">
       <label for="" class="label">Username</label>
       <div class="control has-icons-left">
@@ -75,6 +75,6 @@
       </div>
     </div>
     <!-- BOTON REGISTRO -->
-    <button (click)="redirect()" class="button is-primary mb-2" type="submit">Modificar Usuario</button>
+    <button class="button is-primary mb-2" type="submit">Modificar Usuario</button>
   </form>
 </div>
