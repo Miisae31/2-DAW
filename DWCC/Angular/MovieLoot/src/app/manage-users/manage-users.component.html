@@ -1,0 +1,25 @@
+<app-header></app-header>
+
+<div class="container">
+    <h1 class="title mt-5">Gestión de Usuarios</h1>
+
+    <div class="box">
+        <!-- Encabezados -->
+        <div class="columns has-text-weight-bold is-centered has-background-light p-2">
+            <div class="column">Usuario</div>
+            <div class="column">Rol</div>
+            <div class="column has-text-centered">Acciones</div>
+        </div>
+
+        <!-- Lista de usuarios (Ejemplo con *ngFor en Angular) -->
+        <div class="columns is-vcentered p-2" *ngFor="let usuario of usuarios; let  i = index">
+            <div class="column">{{ usuario.username }}</div>
+            <div class="column">
+                <span class="tag" [ngClass]="{'is-dark' : usuario.rol === 'usuario' ,'is-primary' : usuario.rol === 'administrador'}">{{ usuario.rol }}</span>
+            </div>
+            <div class="column is-4 has-text-centered">
+                <button class="button is-warning is-small mx-1" (click)="editarUsuario(i)">Editar</button>
+                <button class="button is-danger is-small mx-1" (click)="eliminarUsuario(i)">Eliminar</button>
+            </div>
+        </div>
+    </div>

@@ -1,42 +1,50 @@
 import { Component } from "@angular/core";
-import { CommonModule } from "@angular/common";
 import {
   FormBuilder,
   FormGroup,
   ReactiveFormsModule,
   Validators,
 } from "@angular/forms";
-import { HeaderComponent } from "../header/header.component";
 import { ServizoLoginService } from "../services/servizo-login.service";
-import { Router } from "@angular/router";
+import { Router, ActivatedRoute } from "@angular/router";
+import { CommonModule } from "@angular/common";
+import { HeaderComponent } from "../header/header.component";
+
 @Component({
-  selector: "app-create",
+  selector: "app-edit-users",
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, HeaderComponent],
-  templateUrl: "./create.component.html",
-  styleUrl: "./create.component.css",
+  imports: [CommonModule, ReactiveFormsModule, HeaderComponent],
+  templateUrl: "./edit-users.component.html",
+  styleUrl: "./edit-users.component.css",
 })
-export class CreateComponent {
+export class EditUsersComponent {
   formularioCreate: FormGroup;
   usuarios: any[];
+  usuarioEditado: any;  
+  indice: number;
   constructor(
     private elaborador: FormBuilder,
     private servicio: ServizoLoginService,
-    private router: Router
+    private router: Router,
+    private route: ActivatedRoute
   ) {
     this.formularioCreate = this.elaborador.group({
-      // Cada control do formulario defínese mediante  un array, no que o primeiro elemento corresponde ao valor por defecto do campo, e o segundo elemento corresponde a un array con todos os validadores qeu se aplican ao campo
       username: ["", [Validators.required]],
-      contrasenhaUsuario: ["", [Validators.required]],
+      contrasenha: ["", [Validators.required]],
       rol: ["", [Validators.required]],
     });
   }
 
+ 
+
+
+  
   registrar(evento: Event) {
     evento.preventDefault();
-
     if (this.formularioCreate.valid) {
-      this.servicio.añadirUsuario(this.formularioCreate.value);
+      const usuarioModificado = this.formularioCreate.value;
+      this.servicio.editUser(this.indice, usuarioModificado); // Llamada al servicio para editar
+      this.redirect(); // Redirigir después de editar
     } else {
       this.formularioCreate.markAllAsTouched();
     }
@@ -45,12 +53,26 @@ export class CreateComponent {
   ngOnInit(): void {
     this.servicio.subcribirse$().subscribe((usuarios) => {
       this.usuarios = usuarios;
+
+      this.route.params.subscribe((params: any) => {
+        this.indice = params["indice"];
+        this.usuarioEditado = this.usuarios[this.indice];
+  
+        if (this.usuarioEditado) {
+          this.formularioCreate.patchValue({
+            username: this.usuarioEditado.username,
+            contrasenha: this.usuarioEditado.contrasenha,
+            rol: this.usuarioEditado.rol,
+          });
+        }
+      });
     });
+    
   }
 
   redirect() {
-    if(this.formularioCreate.valid) {
-      this.router.navigate(["/inicio"]);
+    if (this.formularioCreate.valid) {
+      this.router.navigate(["/manage-users"]);
     }
   }
 
@@ -91,4 +113,6 @@ export class CreateComponent {
   get rolInvalido(): boolean {
     return (this.rol?.invalid && this.rol?.touched) || false;
   }
+
+  // this.formulario.patchValue(____); (Meter objeto dentro y ya rellena el formulario)
 }

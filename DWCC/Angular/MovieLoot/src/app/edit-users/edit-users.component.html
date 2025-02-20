@@ -1,7 +1,7 @@
 <app-header></app-header>
 
 <div class="container">
-  <h1 class="title">Creacion Usuario</h1>
+  <h1 class="title mt-5">Edicion Usuario</h1>
 </div>
 
 <div class="container">
@@ -37,7 +37,7 @@
         <input
           type="password"
           class="input mb-2"
-          formControlName="contrasenhaUsuario"
+          formControlName="contrasenha"
           [class.is-success]="contrasenhaUsuarioValida"
           [class.is-danger]="contrasenhaUsuarioInvalida"
         />
@@ -74,16 +74,7 @@
         </div>
       </div>
     </div>
-
-    
-
-    
-
-    <!-- BOTON REGISTRO --> 
-    <button (click)="redirect()" class="button is-purple mb-2" type="submit">Crear Cuenta</button>
+    <!-- BOTON REGISTRO -->
+    <button (click)="redirect()" class="button is-primary mb-2" type="submit">Modificar Usuario</button>
   </form>
 </div>
-
-<!-- Futuro uso? 
- <app-footer></app-footer>
- -->

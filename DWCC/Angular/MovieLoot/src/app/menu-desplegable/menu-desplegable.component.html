@@ -26,7 +26,7 @@
             <li><a routerLink="/inicio">Series y Peliculas</a></li>
             <li><a routerLink="/inicio">Foros</a></li>
             <ng-container *ngIf="isAdmin()">
-                <li><a routerLink="/adminUsuarios">Gestion Usuarios</a></li>
+                <li><a routerLink="/manage-users">Gestion Usuarios</a></li>
             </ng-container>
             <li *ngIf="isLogged()"><a (click)="logout()" routerLink="/login">Cerrar Sesión</a></li>
         </ul>
