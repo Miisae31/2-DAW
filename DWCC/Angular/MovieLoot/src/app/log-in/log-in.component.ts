@@ -25,37 +25,37 @@ export class LogInComponent {
     private servicio: ServizoLoginService,
     private router: Router
   ) {
-    this.formularioLogin = this.elaborador.group({
-      // Cada control do formulario defínese mediante  un array, no que o primeiro elemento corresponde ao valor por defecto do campo, e o segundo elemento corresponde a un array con todos os validadores qeu se aplican ao campo
-      username: ["", [Validators.required]],
+    this.formularioLogin = this.elaborador.group({ // Se crea el formulario de login
+      // Se establecen los campos del formulario
+      username: ["", [Validators.required]], 
       contrasenha: ["", [Validators.required]],
     });
   }
 
-  onLogin() {
-    if (this.formularioLogin.valid) {
-      const username = this.formularioLogin.value.username;
-      const contrasenha = this.formularioLogin.value.contrasenha;
+  onLogin() { // Función que se ejecuta al hacer click en el botón de login
+    if (this.formularioLogin.valid) { // Si el formulario es válido
+      const username = this.formularioLogin.value.username; // Se obtiene el valor del campo username
+      const contrasenha = this.formularioLogin.value.contrasenha; // Se obtiene el valor del campo contraseña
 
-      const usuarioAutenticado = this.servicio.loginUsuario(
+      const usuarioAutenticado = this.servicio.loginUsuario( // Se intenta loguear al usuario
         username,
         contrasenha
       );
 
-      if (usuarioAutenticado) {
-        this.router.navigate(["inicio"]);
-      } else {
-        this.errorMensaje = "Usuario o contraseña incorrectos";
+      if (usuarioAutenticado) { // Si el usuario se loguea correctamente
+        this.router.navigate(["inicio"]); // Se redirige al usuario a la página de inicio
+      } else {  // Si el usuario no se loguea correctamente
+        this.errorMensaje = "Usuario o contraseña incorrectos"; // Se muestra un mensaje de error
       }
     }
   }
 
-  isLogged() {
+  isLogged() { // Función que devuelve si el usuario está logueado
     return this.servicio.isLogged();
   }
 
-  ngOnInit() {
-    this.servicio.subcribirse$().subscribe((usuarios) => {
+  ngOnInit() { // Función que se ejecuta al iniciar el componente
+    this.servicio.subcribirse$().subscribe((usuarios) => { // Se suscribe al servicio de login
       console.log("Usuarios actualizados", usuarios);
     })
   }

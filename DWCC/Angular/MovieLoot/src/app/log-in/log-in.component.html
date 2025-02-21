@@ -1,40 +1,73 @@
-
 <div class="paginaLogin">
-    <app-header></app-header>
-    <div class="divExterno">
-        <!-- Contenedor del formulario de inicio de sesión -->
-        <div class="divInterno">
-            <form [formGroup]="formularioLogin">
-                <!-- Diseño del formulario usando un grid -->
-                <div class="grid">
-                    <!-- Título de inicio de sesión con icono de flecha -->
-                    <div class="divInicioSesionTitulo">
-                        <a *ngIf="isLogged()" routerLink='/inicio'>
-                            <i id="arrow" class="fa-solid fa-arrow-left"></i>
-                        </a>
-                        <h1 class="title has-text-white mb-3">Inicio de Sesión</h1>
-                    </div>
-    
-                    <!-- Campo para correo electrónico -->
-                    <div class="divlabelEmail"><label class="label has-text-white"  for="text">Username</label></div>
-                    <div class="divInputEmail"><input class="input mb-4" type="text" id="username" name="username" formControlName="username"></div>
-    
-                    <!-- Campo para contraseña -->
-                    <div class="divLabelContraseña"><label class="label has-text-white"  for="password">Contraseña:</label></div>
-                    <div class="divInputContraseña"><input class="input mb-4"  type="password" id="password" name="password" formControlName="contrasenha"></div>
-    
-                    <!-- Botón para enviar el formulario -->
-                    <div class="divInicioSesion">
-                        <button class="log button" (click)="onLogin()">Login</button>
-                    </div>
-                    <p *ngIf="errorMensaje" class="has-text-centered has-text-danger">{{ errorMensaje }}</p>
-    
-                    <!-- Enlace para registro de nuevos usuarios -->
-                    <div class="divCrearCuenta mt-3"><p class="has-text-white has-text-weight-bold" id="registrate">¿No tienes una cuenta? <a routerLink="/create" class="has-text-primary has-text-weight-bold is-underlined ">Regístrate</a></p>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
+  <app-header></app-header>
+  <div class="divExterno">
+    <!-- Contenedor del formulario de inicio de sesión -->
+    <div class="divInterno">
+      <form [formGroup]="formularioLogin">
+        <!-- Diseño del formulario usando un grid -->
+        <div class="grid">
+          <!-- Título de inicio de sesión con icono de flecha -->
+          <div class="divInicioSesionTitulo">
+            <a *ngIf="isLogged()" routerLink="/inicio">
+              <!-- Si el usuario ya está logueado, se redirige a la página de inicio -->
+              <i id="arrow" class="fa-solid fa-arrow-left"></i>
+            </a>
+            <h1 class="title has-text-white mb-3">Inicio de Sesión</h1>
+          </div>
 
+          <!-- Campo para correo electrónico -->
+          <div class="divlabelEmail">
+            <label class="label has-text-white" for="text">Username</label>
+          </div>
+          <div class="divInputEmail">
+            <input
+              class="input mb-4"
+              type="text"
+              id="username"
+              name="username"
+              formControlName="username"
+            />
+          </div>
+
+          <!-- Campo para contraseña -->
+          <div class="divLabelContraseña">
+            <label class="label has-text-white" for="password"
+              >Contraseña:</label
+            >
+          </div>
+          <div class="divInputContraseña">
+            <input
+              class="input mb-4"
+              type="password"
+              id="password"
+              name="password"
+              formControlName="contrasenha"
+            />
+          </div>
+
+          <!-- Botón para enviar el formulario -->
+          <div class="divInicioSesion">
+            <button class="log button" (click)="onLogin()">Login</button>
+            <!-- Se llama a la función onLogin() al hacer click -->
+          </div>
+          <p *ngIf="errorMensaje" class="has-text-centered has-text-danger">
+            {{ errorMensaje }}
+          </p>
+
+          <!-- Enlace para registro de nuevos usuarios -->
+          <div class="divCrearCuenta mt-3">
+            <p class="has-text-white has-text-weight-bold" id="registrate">
+              ¿No tienes una cuenta?
+              <a
+                routerLink="/create"
+                class="has-text-primary has-text-weight-bold is-underlined"
+                >Regístrate</a
+              >
+            </p>
+            <!-- Se redirige a la página de registro -->
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

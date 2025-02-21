@@ -30,29 +30,29 @@ export class CreateComponent {
       // Cada control do formulario defínese mediante  un array, no que o primeiro elemento corresponde ao valor por defecto do campo, e o segundo elemento corresponde a un array con todos os validadores qeu se aplican ao campo
       username: ["", [Validators.required]],
       contrasenha: ["", [Validators.required]],
-      rol: ["", [Validators.required]],
+      rol: ["usuario", [Validators.required]],
     });
   }
 
-  registrar(evento: Event) {
-    evento.preventDefault();
+  registrar(evento: Event) { // Método para añadir un usuario
+    evento.preventDefault(); // Evita que se recargue la página
 
-    if (this.formularioCreate.valid) {
-      this.servicio.añadirUsuario(this.formularioCreate.value);
+    if (this.formularioCreate.valid) { // Si el formulario es válido
+      this.servicio.añadirUsuario(this.formularioCreate.value); // Añade el usuario
       this.router.navigate(['/manage-users']); // Redirige después de añadir el usuario
     } else {
-      this.formularioCreate.markAllAsTouched();
+      this.formularioCreate.markAllAsTouched(); // Marca todos los campos como tocados
     }
   }
 
-  ngOnInit(): void {
-    this.servicio.subcribirse$().subscribe((usuarios) => {
-      this.usuarios = usuarios;
+  ngOnInit(): void { // Método que se ejecuta al iniciar el componente
+    this.servicio.subcribirse$().subscribe((usuarios) => { // Se suscribe al observable de usuarios
+      this.usuarios = usuarios;  // Asigna los usuarios a la variable usuarios
     });
   }
 
   isAdmin() {
-    return this.servicio.isAdmin();
+    return this.servicio.isAdmin(); // Comprueba si el usuario es administrador
   }
 
  

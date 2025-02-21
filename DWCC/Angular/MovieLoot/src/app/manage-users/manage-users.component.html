@@ -20,15 +20,15 @@
             <div class="column has-text-centered">Acciones</div>
         </div>
 
-        <!-- Lista de usuarios (Ejemplo con *ngFor en Angular) -->
-        <div class="columns is-vcentered p-2" *ngFor="let usuario of usuarios; let  i = index">
+        <div class="columns is-vcentered p-2" *ngFor="let usuario of usuarios; let  i = index"> <!-- Recorre el array de usuarios -->
             <div class="column">{{ usuario.username }}</div>
             <div class="column">
+                <!-- Etiqueta de color según el rol del usuario -->
                 <span class="tag" [ngClass]="{'is-dark' : usuario.rol === 'usuario' ,'is-primary' : usuario.rol === 'administrador'}">{{ usuario.rol }}</span>
             </div>
             <div class="column is-4 has-text-centered">
-                <button class="button is-warning is-small mx-1" (click)="editarUsuario(i)">Editar</button>
-                <button class="button is-danger is-small mx-1" (click)="eliminarUsuario(i)">Eliminar</button>
+                <button class="button is-warning is-small mx-1" (click)="editarUsuario(i)">Editar</button> <!-- Llama a la función editarUsuario(i) -->
+                <button class="button is-danger is-small mx-1" (click)="eliminarUsuario(i)">Eliminar</button> <!-- Llama a la función eliminarUsuario(i) -->
             </div>
         </div>
     </div>

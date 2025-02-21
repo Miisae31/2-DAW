@@ -25,19 +25,19 @@ export class MenuDesplegableComponent {
 
   // Método para cerrar el menú cuando el cursor sale
   closeMenu() {
-    this.isMenuVisible = false;
+    this.isMenuVisible = false; // Cerramos el menú
   }
 
   isAdmin() {
-    return this.servicio.isAdmin();
+    return this.servicio.isAdmin(); // Comprobamos si el usuario es administrador
   }
 
   isLogged() {
-    return this.servicio.isLogged();
+    return this.servicio.isLogged(); // Comprobamos si el usuario está logueado
   }
 
   logout() {
-    this.servicio.logoutUsuario();
+    this.servicio.logoutUsuario(); // Cerramos sesión
   }
 
   

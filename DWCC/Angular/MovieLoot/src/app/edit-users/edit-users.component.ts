@@ -20,20 +20,21 @@ import { RouterModule } from '@angular/router';
   styleUrl: "./edit-users.component.css",
 })
 export class EditUsersComponent {
-  formularioCreate: FormGroup;
-  usuarios: any[];
-  usuarioEditado: any;  
-  indice: number;
+  formularioCreate: FormGroup; // Formulario de creación de usuario
+  usuarios: any[]; // Array de usuarios
+  usuarioEditado: any;   // Usuario a editar
+  indice: number; // Índice del usuario a editar
   constructor(
     private elaborador: FormBuilder,
     private servicio: ServizoLoginService,
     private router: Router,
     private route: ActivatedRoute
   ) {
-    this.formularioCreate = this.elaborador.group({
-      username: ["", [Validators.required]],
-      contrasenha: ["", [Validators.required]],
-      rol: ["", [Validators.required]],
+    this.formularioCreate = this.elaborador.group({ // Inicialización del formulario
+      // Campos del formulario
+      username: ["", [Validators.required]], 
+      contrasenha: ["", [Validators.required]], 
+      rol: ["", [Validators.required]], 
     });
   }
 
@@ -41,29 +42,28 @@ export class EditUsersComponent {
 
 
   
-  editar(evento: Event) {
+  editar(evento: Event) { // Método para editar un usuario
     evento.preventDefault();
     if (this.formularioCreate.valid) {
-      const usuarioModificado = this.formularioCreate.value;
-      console.log(usuarioModificado);
+      const usuarioModificado = this.formularioCreate.value; // Obtiene los valores del formulario
       this.servicio.editUser(this.indice, usuarioModificado); // Llamada al servicio para editar
       this.router.navigate(['/manage-users']); // Redirige después de editar el usuario
     } else {
-      this.formularioCreate.markAllAsTouched();
+      this.formularioCreate.markAllAsTouched(); // Marca los campos como tocados
     }
   }
 
-  ngOnInit(): void {
-    this.servicio.subcribirse$().subscribe((usuarios) => {
-      this.usuarios = usuarios;
+  ngOnInit(): void { // Método que se ejecuta al iniciar el componente
+    this.servicio.subcribirse$().subscribe((usuarios) => { // Obtiene los usuarios
+      this.usuarios = usuarios; // Guarda los usuarios
 
-      this.route.params.subscribe((params: any) => {
-        this.indice = params["indice"];
-        this.usuarioEditado = this.usuarios[this.indice];
+      this.route.params.subscribe((params: any) => { // Obtiene los parámetros de la URL
+        this.indice = params["indice"]; // Obtiene el índice del usuario a editar
+        this.usuarioEditado = this.usuarios[this.indice]; // Obtiene el usuario a editar
   
-        if (this.usuarioEditado) {
-          this.formularioCreate.patchValue({
-            username: this.usuarioEditado.username,
+        if (this.usuarioEditado) { // Si el usuario a editar existe
+          this.formularioCreate.patchValue({ // Rellena el formulario con los datos del usuario
+            username: this.usuarioEditado.username, 
             contrasenha: this.usuarioEditado.contrasenha,
             rol: this.usuarioEditado.rol,
           });

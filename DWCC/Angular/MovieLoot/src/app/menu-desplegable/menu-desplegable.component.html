@@ -7,9 +7,9 @@
             </a>
         </div>
      </ng-container>
-     <ng-container *ngIf="isLogged()">
+     <ng-container *ngIf="isLogged()"> <!-- Si el usuario está logueado -->
         <div class="divUsuario mt-1">
-            <a (click)="logout()" routerLink='/login' routerLinkActive="active">
+            <a (click)="logout()" routerLink='/login' routerLinkActive="active"> <!-- Llama a la función logout() -->
                 <i class="fa-solid fa-sign-out" id="usuarioIcono"></i>
             </a>
         </div>

@@ -44,58 +44,66 @@ export class ServizoLoginService {
     }
   }
 
-  añadirUsuario(usuario: any) {
-    usuario.rol = "usuario";
-    this.usuarios.push(usuario);
-    this.actualizarUsuarios();
+  añadirUsuario(usuario: any) { // Añadir un usuario
+    if(isPlatformBrowser(this.platformId)) {
+      const usuarioLogueado = localStorage.getItem("usuarioLogueado");
+      if (usuarioLogueado) {
+        const usuario = JSON.parse(usuarioLogueado);
+        if (usuario.rol !== "administrador") {
+        usuario.rol = "usuario";
+        }
+      }
+    }
+    this.usuarios.push(usuario); // Añadir el usuario al array
+    this.actualizarUsuarios(); // Emitir cambios
     
   }
 
-  private actualizarUsuarios() {
-    this.usuarios$.next(this.usuarios);
-    if(isPlatformBrowser(this.platformId)) {
-      localStorage.setItem("usuarios", JSON.stringify(this.usuarios));
+  private actualizarUsuarios() { // Método para emitir cambios en el array de usuarios
+    this.usuarios$.next(this.usuarios); // Emitir cambios
+    if(isPlatformBrowser(this.platformId)) { // Si se está ejecutando en el navegador
+      localStorage.setItem("usuarios", JSON.stringify(this.usuarios)); // Guardar los usuarios en el almacenamiento local
       }
   }
 
-  loginUsuario(username: string, contrasenha: string): boolean {
-    const usuario = this.usuarios.find(
-      (usuario: any) =>
-        usuario.username === username && usuario.contrasenha === contrasenha
+  loginUsuario(username: string, contrasenha: string): boolean { // Método para loguear un usuario
+    const usuario = this.usuarios.find( // Buscar el usuario en el array
+      (usuario: any) => 
+        usuario.username === username && usuario.contrasenha === contrasenha // Comprobar si el usuario y la contraseña coinciden
     );
 
     if (usuario) {
-      if(isPlatformBrowser(this.platformId)) {
-      localStorage.setItem("usuarioLogueado", JSON.stringify(usuario));
+      if(isPlatformBrowser(this.platformId)) { // Si se está ejecutando en el navegador
+      localStorage.setItem("usuarioLogueado", JSON.stringify(usuario)); // Guardar el usuario logueado en el almacenamiento local
       }
-      this.autenticado$.next(true);
+      this.autenticado$.next(true); // Emitir que el usuario está autenticado
       return true;
     } else {
       return false;
     }
   }
 
-  logoutUsuario() {
-    if(isPlatformBrowser(this.platformId)) {
-    localStorage.removeItem("usuarioLogueado");
+  logoutUsuario() { // Método para desloguear un usuario
+    if(isPlatformBrowser(this.platformId)) { // Si se está ejecutando en el navegador
+    localStorage.removeItem("usuarioLogueado"); // Eliminar el usuario logueado del almacenamiento local
     }
-    this.autenticado$.next(false);
+    this.autenticado$.next(false); // Emitir que el usuario no está autenticado
   }
 
-  subcribirse$(): Observable<any[]> {
-    return this.usuarios$.asObservable();
+  subcribirse$(): Observable<any[]> { // Método para suscribirse al observable de usuarios
+    return this.usuarios$.asObservable(); // Devuelve el observable de usuarios
   }
 
-  obtenerAutenticacion(): Observable<boolean> {
-    return this.autenticado$.asObservable();
+  obtenerAutenticacion(): Observable<boolean> { // Método para obtener la autenticación
+    return this.autenticado$.asObservable(); // Devuelve el observable de autenticación
   }
 
   isAdmin(): boolean {
-    if(isPlatformBrowser(this.platformId)) {
-    const usuarioLogueado = localStorage.getItem("usuarioLogueado");
+    if(isPlatformBrowser(this.platformId)) { // Si se está ejecutando en el navegador
+    const usuarioLogueado = localStorage.getItem("usuarioLogueado"); // Obtener el usuario logueado
     
-    if (usuarioLogueado) {
-      const usuario = JSON.parse(usuarioLogueado);
+    if (usuarioLogueado) { // Si hay un usuario logueado
+      const usuario = JSON.parse(usuarioLogueado); // Convertir el usuario logueado a objeto
       return usuario.rol === "administrador";  // Verifica si el rol es 'administrador'
     }
   }
@@ -104,24 +112,24 @@ export class ServizoLoginService {
   }
   
 
-  isLogged(): boolean {
+  isLogged(): boolean { // Método para comprobar si el usuario está autenticado
     return this.autenticado$.value;
   }
 
-  getUsers(): any[] {
+  getUsers(): any[] { // Método para obtener los usuarios
     return this.usuarios;
   }
 
-  destroyUser(indice: number) {
+  destroyUser(indice: number) { // Método para eliminar un usuario
     this.usuarios.splice(indice, 1); // Eliminar el usuario en el índice especificado
-    this.actualizarUsuarios(); 
+    this.actualizarUsuarios();  // Emitir cambios
   }
 
-  editUser(indice: number, usuarioEditado: any) {
+  editUser(indice: number, usuarioEditado: any) { // Método para modificar un usuario
 
   
     // Modificar el usuario en el índice especificado
-    this.usuarios[indice] = { ...this.usuarios[indice], ...usuarioEditado };
+    this.usuarios[indice] = { ...this.usuarios[indice], ...usuarioEditado }; // Esto crea un nuevo objeto con las propiedades del usuario original y las propiedades del usuario editado y lo asigna al usuario original
   
     this.actualizarUsuarios(); // Emitir cambios
   }

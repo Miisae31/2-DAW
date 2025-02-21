@@ -5,7 +5,7 @@
 </div>
 
 <div class="container">
-  <form [formGroup]="formularioCreate" (ngSubmit)="registrar($event)">
+  <form [formGroup]="formularioCreate" (ngSubmit)="registrar($event)"> <!-- Formulario de registro -->
     <div class="field">
       <label for="" class="label">Username</label>
       <div class="control has-icons-left">
@@ -15,7 +15,7 @@
           formControlName="username"
           [class.is-success]="usernameValido"
           [class.is-danger]="usernameInvalido"
-        />
+        /> <!-- Input de username -->
         <!-- Si el usuario aún no ha introducido nada -->
         <span *ngIf="!usernameValido && !usernameInvalido" class="icon is-small is-left">
           <i class="fa-solid fa-user" data-fa-i2svg="false"></i>
@@ -57,7 +57,7 @@
             [class.is-success]="rolValido"
             [class.is-danger]="rolInvalido"
           >
-            <option *ngIf="isAdmin()" value="administrador">Administrador</option>
+            <option *ngIf="isAdmin()" value="administrador">Administrador</option> <!-- Si el usuario es administrador, puede seleccionar el rol de administrador -->
             <option value="usuario">Usuario</option>
           </select>
           <span *ngIf="!rolValido && !rolInvalido" class="icon is-small is-left">
@@ -79,6 +79,3 @@
   </form>
 </div>
 
-<!-- Futuro uso? 
- <app-footer></app-footer>
- -->
