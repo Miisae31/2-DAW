@@ -1,0 +1,27 @@
+<h1 class="title is-1">USO DE PIPES EN ANGULAR</h1>
+
+<h2 class="title is-2">PIPES PREDEFINIDOS</h2>
+
+<!-- O pipe 'uppercase' converte todo en mayusculas-->
+<p>{{ texto | uppercase }}</p>
+
+<!-- O pipe 'uppercase' converte todo en minusculas-->
+<p>{{ texto | lowercase }}</p>
+
+<!-- O pipe 'uppercase' converte a primeira letra de cada palabra en mayusculas-->
+<p>{{ texto | titlecase }}</p>
+
+<!-- O pipe 'uppercase' converte a primeira letra en mayusculas-->
+<p>{{ hoxe | date:'HH:mm dd-MM-yyyy'}}</p>
+
+<!-- O pipe 'number' formatea numeros e define os decimais, por exemplo: '1.2-2' significa 1 (minimo de un dixito antes da coma) e 2-2 (minimo e maximo de 2 decimais) -->
+ <p>{{ numero | number:'1.2-2'}}</p>
+
+ <!-- O pipe 'percent' formatea numeros en porcentaxe -->
+ <p>{{ porcentaxe | percent:'1.2-2' }}</p>
+
+  <!-- No es obligatorio indicar un patron -->
+  <p>{{ porcentaxe | percent }}</p>
+
+  <!-- O Pipe currency formatea numeros coma cantidades monetarias -->
+   <p>{{ cartos | currency:'EUR':'symbol' }}</p>

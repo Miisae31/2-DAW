@@ -1,0 +1,18 @@
+
+<div class="container">
+    <h1 class="title mt-5">Lista de usuarios no servidor</h1>
+
+<input type="text" class="input mb-5 is-normal is-rounded" [(ngModel)]="nombre" placeholder="Nombre">
+<input type="text" class="input mb-5 is-normal is-rounded" [(ngModel)]="rol" placeholder="Rol">
+<button class="button mb-5" (click)="anadirUsuario()">Engadir usuario</button>
+
+<ul class="list-group">
+    <li class="list-item mb-3" *ngFor="let usuario of usuarios">
+        <span class="has-text-weight-bold">{{usuario.nombre}}</span> - <span class="tag is-black has-text-weight-bold">{{usuario.rol}}</span>
+        <div class="botons mt-4">
+            <button class="mudar-rol button is-info mr-3" (click)="mudarRol(usuario)">Modificar</button>
+            <button class="eliminar button is-danger" (click)="eliminarUsuario(usuario.id)">Eliminar</button>
+        </div>
+    </li>
+</ul>
+</div>
