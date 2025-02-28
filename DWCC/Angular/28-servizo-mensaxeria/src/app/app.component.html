@@ -1,0 +1,15 @@
+
+<h1 class="title is-1">Exemplo de servizo con BehaviorSubject e ReplaySubject</h1>
+<div class="container">
+<!-- Compoñente para enviar mensaxes-->
+ <app-emisor></app-emisor>
+
+ <!-- Boton para añadir novos receptores -->
+  <button class="button is-primary mt-4" (click)="engadirReceptores()">Engadir novo Receptor</button>
+
+<!-- Lista dinamica de receptores -->
+
+<div *ngFor="let id of receptores">
+    <app-receptor></app-receptor>
+</div>
+</div>
