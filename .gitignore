@@ -9,3 +9,7 @@ dist/
 # Configuración de entornos
 .env
 *.local
+
+# Archivos temporales y caché
+.angular/
+
