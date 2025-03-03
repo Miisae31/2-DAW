@@ -39,7 +39,7 @@ export class CreateComponent {
 
     if (this.formularioCreate.valid) { // Si el formulario es válido
       this.servicio.añadirUsuario(this.formularioCreate.value); // Añade el usuario
-      this.router.navigate(['/manage-users']); // Redirige después de añadir el usuario
+      this.router.navigate(['/administracion']); // Redirige después de añadir el usuario
     } else {
       this.formularioCreate.markAllAsTouched(); // Marca todos los campos como tocados
     }

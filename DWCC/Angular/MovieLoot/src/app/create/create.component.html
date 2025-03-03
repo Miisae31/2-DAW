@@ -28,6 +28,9 @@
         <span *ngIf="usernameInvalido" class="icon is-small is-left">
           <i class="fa-solid fa-ban" data-fa-i2svg="false"></i>
         </span>
+        <span>
+          <p *ngIf="usernameInvalido" class="help is-danger">El username no puede estar vacío</p>
+        </span>
       </div>
     </div>
     
@@ -44,13 +47,22 @@
         <span *ngIf="!contrasenhaUsuarioValida && !contrasenhaUsuarioInvalida" class="icon is-small is-left">
           <i class="fa-solid fa-lock" data-fa-i2svg="false"></i>
         </span>
+        <span *ngIf="contrasenhaUsuarioValida" class="icon is-small is-left">
+          <i class="fa-solid fa-check" data-fa-i2svg="false"></i>
+        </span>
+        <span *ngIf="contrasenhaUsuarioInvalida" class="icon is-small is-left">
+          <i class="fa-solid fa-ban" data-fa-i2svg="false"></i>
+        </span>
+        <span>
+          <p *ngIf="contrasenhaUsuarioInvalida" class="help is-danger">La contraseña no puede estar vacía</p>
+        </span>
       </div>
     </div>
 
     <!-- Select de rol-->
     <div class="field">
       <label class="label mb-2" for="rol">Rol</label>
-      <div class="control has-icons-left has-icons-right">
+      <div class="control has-icons-left">
         <div class="select is-rounded is-medium is-fullwidth">
           <select
             formControlName="rol"
@@ -70,6 +82,9 @@
           <!-- Icono de ban (inválido) -->
           <span *ngIf="rolInvalido" class="icon is-small is-left">
             <i class="fa-solid fa-ban" data-fa-i2svg="false"></i>
+          </span>
+          <span *ngIf="rolInvalido" class="icon is-small is-left">
+            <p *ngIf="rolInvalido" class="help is-danger">El rol no puede ir vacio</p>
           </span>
         </div>
       </div>

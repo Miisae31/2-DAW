@@ -5,13 +5,13 @@ import { ServizoLoginService } from "../services/servizo-login.service";
 import { Router, RouterModule } from "@angular/router";
 
 @Component({
-  selector: "app-manage-users",
+  selector: "app-administracion",
   standalone: true,
   imports: [HeaderComponent, CommonModule, RouterModule],
-  templateUrl: "./manage-users.component.html",
-  styleUrl: "./manage-users.component.css",
+  templateUrl: "./administracion.component.html",
+  styleUrl: "./administracion.component.css",
 })
-export class ManageUsersComponent {
+export class AdministracionComponent {
   usuarios: any[] = []; // Array de usuarios
 
   constructor(private servicio: ServizoLoginService, private router: Router) {  // Constructor
@@ -22,6 +22,6 @@ export class ManageUsersComponent {
     this.servicio.destroyUser(indice);
   }
   editarUsuario(indice: number) { // Función para editar un usuario
-    this.router.navigate(["/edit-users", indice])
+    this.router.navigate(["/edit-users", indice]) // Redirige a la página de edición de usuarios con el índice del usuario como parámetro
   }
 }

@@ -28,25 +28,14 @@
         <span *ngIf="usernameInvalido" class="icon is-small is-left">
           <i class="fa-solid fa-ban" data-fa-i2svg="false"></i>
         </span>
-      </div>
-    </div>
-    
-    <div class="field">
-      <label for="" class="label">Contraseña</label>
-      <div class="control has-icons-left">
-        <input
-          type="password"
-          class="input mb-2"
-          formControlName="contrasenha"
-          [class.is-success]="contrasenhaUsuarioValida"
-          [class.is-danger]="contrasenhaUsuarioInvalida"
-        />
-        <span *ngIf="!contrasenhaUsuarioValida && !contrasenhaUsuarioInvalida" class="icon is-small is-left">
-          <i class="fa-solid fa-lock" data-fa-i2svg="false"></i>
+        <span>
+          <p *ngIf="usernameInvalido" class="help is-danger">El username no puede estar vacío</p>
         </span>
       </div>
     </div>
-
+    
+  
+    <!-- Aqui estaba el formulario de la contraseña pero creo que no tiene cabida que un administrador pueda cambiar contraseñas de usuario -->
     <!-- Select de rol-->
     <div class="field">
       <label class="label mb-2" for="rol">Rol</label>
@@ -70,6 +59,9 @@
           <!-- Icono de ban (inválido) -->
           <span *ngIf="rolInvalido" class="icon is-small is-left">
             <i class="fa-solid fa-ban" data-fa-i2svg="false"></i>
+          </span>
+          <span *ngIf="rolInvalido" class="icon is-small is-left">
+            <p *ngIf="rolInvalido" class="help is-danger">El rol no puede ir vacio</p>
           </span>
         </div>
       </div>

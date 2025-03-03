@@ -47,7 +47,7 @@ export class EditUsersComponent {
     if (this.formularioCreate.valid) {
       const usuarioModificado = this.formularioCreate.value; // Obtiene los valores del formulario
       this.servicio.editUser(this.indice, usuarioModificado); // Llamada al servicio para editar
-      this.router.navigate(['/manage-users']); // Redirige después de editar el usuario
+      this.router.navigate(['/administracion']); // Redirige después de editar el usuario
     } else {
       this.formularioCreate.markAllAsTouched(); // Marca los campos como tocados
     }

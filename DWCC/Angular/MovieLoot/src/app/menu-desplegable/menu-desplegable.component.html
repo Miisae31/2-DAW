@@ -23,10 +23,10 @@
         <!-- Menú desplegable -->
         <ul>
             <li><a routerLink="/inicio">Inicio</a></li>
-            <li><a routerLink="/inicio">Series y Peliculas</a></li>
-            <li><a routerLink="/inicio">Foros</a></li>
+            <li><a routerLink="/foros">Foros</a></li>
+            <li><a routerLink="/perfil">Perfil</a></li>
             <ng-container *ngIf="isAdmin()">
-                <li><a routerLink="/manage-users">Gestion Usuarios</a></li>
+                <li><a routerLink="/administracion">Gestion Usuarios</a></li>
             </ng-container>
             <li *ngIf="isLogged()"><a (click)="logout()" routerLink="/login">Cerrar Sesión</a></li>
         </ul>
